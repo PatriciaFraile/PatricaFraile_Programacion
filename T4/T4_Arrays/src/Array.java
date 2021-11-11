@@ -15,7 +15,7 @@ public class Array {
         int longitudArray = numerosDos.length;
         System.out.println(longitudArray);
         //Sacar todos los valores
-        for (int i = 0 ; i<numerosDos.length;i++){
+        for (int i = 0 ; i<=numerosDos.length-1;i++){
             System.out.println(numerosDos[i]);
         }
     }
