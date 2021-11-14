@@ -1,5 +1,4 @@
-public class Array {
-
+public class Arrays {
     public static void main(String[] args) {
         // Como crear una Arrays
         int[] numeros = new int[10];
@@ -40,4 +39,5 @@ public class Array {
 
 
     }
+
 }
