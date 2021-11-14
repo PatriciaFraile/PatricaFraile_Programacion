@@ -2,4 +2,4 @@
 
 ## Cambio local
 
-### Cambio ddesde repositorio de red
+### Cambio desde repositorio de red
