@@ -1,4 +1,3 @@
-package Base;
 
 public class Ejercicio1 {
 
