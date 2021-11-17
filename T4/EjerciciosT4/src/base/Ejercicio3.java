@@ -13,7 +13,6 @@ public class Ejercicio3 {
             System.out.println("Introduce numeros");
             int numero = entradaTeclado.nextInt();
             numeros[i] = numero;
-
         }
         System.out.println("En orden inverso");
         for (int i = 9; i >=0 ; i--) {
