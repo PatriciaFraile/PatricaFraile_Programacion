@@ -17,17 +17,15 @@ public class Ejercicio1 {
         fila = entradaTeclado.nextInt();
         System.out.println("Cuantas columnas quieres");
         columna = entradaTeclado.nextInt();
-        int [][] tabla = new int [fila][columna];
+        int[][] tabla = new int[fila][columna];
         for (int i = 0; i < tabla[0].length; i++) {
             for (int j = 0; j < tabla[0].length; j++) {
-                tabla[i][j]= (int)Math.random()*101;
-                System.out.print(tabla[i][j]+ " ");
+                tabla[i][j] = (int) Math.random() * 101;
+                System.out.print(tabla[i][j] + " ");
             }
             System.out.println("");
 
         }
-
-
 
 
     }
