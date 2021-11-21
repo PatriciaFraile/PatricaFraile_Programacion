@@ -2,7 +2,7 @@ package muldimensionales;
 
 import java.util.Scanner;
 
-public class Tabla {
+public class Cuadrado {
     public static void main(String[] args) {
 
         Scanner entradateclado = new Scanner(System.in);
@@ -22,3 +22,4 @@ public class Tabla {
         }
     }
 }
+
