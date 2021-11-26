@@ -19,5 +19,6 @@ public class Ejercicio7 {
 
          System.out.println("La suma es : " + suma);
 
+
      }
 }
