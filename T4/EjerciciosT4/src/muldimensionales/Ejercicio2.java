@@ -98,6 +98,19 @@ public class Ejercicio2 {
                     System.out.println("Has elegido ver datos concretos de un alumno");
                     System.out.println("Que alumno quieres ver");
                     persona = entradaTeclado.nextLine();
+                    for (int i = 0; i < alumno.length; i++) {
+                        for (int j = 3; j <= alumno.length; j++) {
+                            if (alumno[i][j].equals(persona)){
+                                System.out.println("Si esta registrado");
+
+
+                            }
+                            else{
+                                System.out.println("No esta registrado");
+                            }
+                        }
+                        
+                    }
                 case 5:
                     int mediaAsignatura1;
                     mediaAsignatura1 = (nota1 + nota1 + nota1 )/3;
