@@ -7,16 +7,16 @@ public class EjercicioPaises {
 
         String[][] ciudades = new String[4][3];
         String[] países = new String[4];
-        Scanner scan = new Scanner(System.in);
+        Scanner entradaTeclado = new Scanner(System.in);
         System.out.println("Introduzca el nombre de cuatro países.");
         int i=0; int j=0;
         for(i=0;i<4;i++){
-            países[i] = scan.nextLine();
+            países[i] = entradaTeclado.nextLine();
         }
         for(i=0;i<4;i++){
             System.out.println("Introduzca tres ciudades de "+países[i]+".");
             for(j=0;j<3;j++){
-                ciudades[i][j] = scan.nextLine();
+                ciudades[i][j] = entradaTeclado.nextLine();
             }
         }
         System.out.print("\nLos países y ciudades intoducidos son los siguientes: \n");
