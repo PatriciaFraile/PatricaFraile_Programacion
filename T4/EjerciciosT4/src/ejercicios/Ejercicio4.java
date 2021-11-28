@@ -33,7 +33,7 @@ public class Ejercicio4 {
 
         }
         System.out.println("El mayor es " + numeros[numeros.length-1]);
-        System.out.println("El mayor es " + numeros[0]);
+        System.out.println("El pequeño es " + numeros[0]);
       /*  for (int i = 0; i < numeros.length; i++) {
             if(numeros[i]<min){
                 min = numeros[i];
