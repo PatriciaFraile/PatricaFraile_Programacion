@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class GeneradorPalabras {
     public static void main(String[] args) {
         Scanner entradaTeclado = new Scanner(System.in);
-        char[] abc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+        char[] abc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n','ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
         String[] palabras;
         int num;
 
         //Imprimir el abecedario
-        // for (char car = 'a';  car <='z' ; car++) {
-        // System.out.println(car);
-        //}
+        /* for (char car = 'a';  car <='z' ; car++) {
+         System.out.println(car);
+        }*/
         System.out.println("Cuantas palabras quieres guardas");
         num = entradaTeclado.nextInt();
         palabras = new String[num];
