@@ -12,7 +12,6 @@ public class MenuArray {
         Object[] numeros3 = new Object[longitud];
         int opcion = 0;
         int longitudNueva = 0;
-
         do {
             System.out.println("\n1.Rellenar el array con numeros aleatorios\n 2.Rellenar el array por consola\n");
             System.out.println("Elige una opcion");
@@ -75,8 +74,6 @@ public class MenuArray {
                     }
                     break;
             }
-
-
         } while (opcion != 3);
         entradaTeclado.close();
     }
