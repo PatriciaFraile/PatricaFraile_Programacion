@@ -1,10 +1,9 @@
 package Strings;
-
 public class EjercicioPalindromo {
     public static void main(String[] args) {
         String fraseCompleta = "Allí ve Sevilla";
         boolean palindromo = false;
-        fraseCompleta = fraseCompleta.replaceAll(" ", "").toLowerCase();
+        fraseCompleta = fraseCompleta.replaceAll(" ", "").replaceAll("í", "i").toLowerCase();
         for (int i = 0; i < (fraseCompleta.length() / 2); i++) {
             if (fraseCompleta.charAt(i) == fraseCompleta.charAt(fraseCompleta.length() - 1 - i)) {
                 palindromo = true;
