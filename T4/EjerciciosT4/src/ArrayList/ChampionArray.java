@@ -1,4 +1,4 @@
-package Strings;
+package ArrayList;
 import java.util.ArrayList;
 public class ChampionArray {
     public static void main(String[] args) {

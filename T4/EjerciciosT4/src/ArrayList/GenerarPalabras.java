@@ -1,4 +1,4 @@
-package Strings;
+package ArrayList;
 
 public class GenerarPalabras {
     //Sacar el usuario de un correo

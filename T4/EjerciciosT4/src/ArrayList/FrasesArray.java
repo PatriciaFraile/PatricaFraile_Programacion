@@ -1,5 +1,5 @@
-package Strings;
-import java.util.Arrays;
+package ArrayList;
+
 public class FrasesArray {
     //Sacar la palabra  larga
     //Sacar la palabra corta

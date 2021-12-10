@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.function.Predicate;
 
 public class Colecciones {
     public static void main(String[] args) {
@@ -37,9 +38,9 @@ public class Colecciones {
         for (int i = 0; i < listaCosas.size(); i++) {
             System.out.println((i + 1) + "-" + listaCosas.get(i));
         }
-        int posiciones =1;
+        int posiciones = 1;
         //Imprimir el ArrayList con el foreach
-        for (Object item:listaCosas) {
+        for (Object item : listaCosas) {
             System.out.println(posiciones + "-" + item);
             posiciones++;
         }
@@ -52,9 +53,9 @@ public class Colecciones {
                 System.out.println("Palabra no encontrada");
             }
         }*/
-        posiciones= 0;
-        for (Object item:listaCosas) {
-            if (item.equals("Borja")){
+        posiciones = 0;
+        for (Object item : listaCosas) {
+            if (item.equals("Borja")) {
                 System.out.println("Palabra encontrada");
                 System.out.println("En la posicion " + posiciones);
             }
@@ -63,20 +64,19 @@ public class Colecciones {
         System.out.println("Otra forma de buscar");
         posiciones = 1;
         int posicionElemento = listaCosas.indexOf("Borja");
-        if(posicionElemento>-1){
+        if (posicionElemento > -1) {
             System.out.println("Palabra encontrada");
             System.out.println("En la posicion " + posicionElemento);
         }
         System.out.println("Que palabra quieres buscar");
         Object buscar = entradaTeclado.next();
-        posiciones= 0;
+        posiciones = 0;
         //El metodo contains puede fallar
-        if(listaCosas.contains(buscar)){
+        if (listaCosas.contains(buscar)) {
             System.out.println("Palabra encontrada");
-        }
-        else{
+        } else {
             listaCosas.add(buscar);
-            for (Object item:listaCosas) {
+            for (Object item : listaCosas) {
                 System.out.println(posiciones + "-" + item);
                 posiciones++;
             }
@@ -84,10 +84,21 @@ public class Colecciones {
         //Borrar numeros repetidos
         System.out.println(listaCosas);
         for (int i = 0; i < listaCosas.size(); i++) {
-            if (listaCosas.get(i).equals(12)){
-                listaCosas.remove(i);
+            //Cambio de ese tipo
+            if (listaCosas.get(i) instanceof Integer) {
+                if (listaCosas.get(i).equals(12)) {
+                    listaCosas.remove(i);
+                }
             }
         }
+        System.out.println(listaCosas);
+        System.out.println("Otra forma mas rapida");
+        listaCosas.removeIf(new Predicate() {
+            @Override
+            public boolean test(Object o) {
+                return o.equals(6);
+            }
+        });
         System.out.println(listaCosas);
         //Borrar cosas del Arraylist
         /*System.out.println("El tamaño actual es de :" +listaCosas.size());

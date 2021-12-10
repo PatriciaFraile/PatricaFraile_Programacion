@@ -1,4 +1,4 @@
-package Strings;
+package ArrayList;
 import java.util.Scanner;
 public class GeneradorPalabras {
     public static void main(String[] args) {

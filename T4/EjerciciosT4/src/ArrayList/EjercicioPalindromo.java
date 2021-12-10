@@ -1,4 +1,4 @@
-package Strings;
+package ArrayList;
 public class EjercicioPalindromo {
     public static void main(String[] args) {
         String fraseCompleta = "Allí ve Sevilla";
