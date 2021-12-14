@@ -8,6 +8,7 @@ public class Garaje {
         Object[][] coche = new Object[1][1];
         Scanner entrada = new Scanner(System.in);
         int N = 0;
+        String matricula = "";
         Object[] cantidad = new Object[N];
         int opcion = 0;
         do {
@@ -27,7 +28,7 @@ public class Garaje {
                         if (N <= 1) {
                             System.out.println("Error");
                         } else {
-                            coche = new Object[N][4];
+                            coche = new Object[N][5];
 
                         }
                     } while (N <= 1);
@@ -73,6 +74,24 @@ public class Garaje {
                         }
                     }
                     break;
+                case 3:
+                    System.out.println("Buscar coches");
+                    System.out.println("Por favor escribe la matricula del coche");
+                    matricula = entrada.next();
+                    for (int i = 0; i < coche.length ; i++) {
+                        for (int j = 0; j < 1; j++) {
+                            if(coche[i][j].equals(matricula)){
+                                System.out.println("Nombre" + coche[i][0]);
+                                System.out.println("Marca :" + coche[i][1]);
+                                System.out.println("Modelo :" + coche[i][2]);
+                                System.out.println("Coste :" + coche[i][3]);
+                                System.out.println("Matricula :" + coche[i][4]);
+                            }
+                        }
+                    }
+                    break;
+
+
             }
         } while (opcion != 6);
 
