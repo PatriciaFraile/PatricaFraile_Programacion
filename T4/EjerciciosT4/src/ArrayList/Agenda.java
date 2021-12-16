@@ -27,7 +27,7 @@ public class Agenda {
                         int telefono = entrada.nextInt();
                         System.out.println("Escribe el dni");
                         String dni = entrada.next();
-                        Object[] agendas = new Object[]{nombre, apellido, telefono, dni};
+                        Object [] agendas = new Object[]{nombre, apellido, telefono, dni};
                         System.out.println("Persona agregada");
                         agenda.add(agendas);
                     } else {
