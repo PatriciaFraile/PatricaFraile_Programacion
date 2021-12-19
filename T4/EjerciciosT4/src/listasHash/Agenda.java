@@ -37,7 +37,7 @@ public class Agenda {
                     System.out.println("Buscar personas");
                     System.out.println("Escribe el dni");
                     String dni = entrada.next();
-                    for (Object item: agenda.get(dni)) {
+                    for (Object item : agenda.get(dni)) {
                         System.out.println(item);
                     }
                     break;
@@ -45,17 +45,13 @@ public class Agenda {
                     System.out.println("Borrar personas");
                     System.out.println("Que dni quieres eliminar");
                     dni = entrada.next();
-                    for (int i = 0; i < agenda.size(); i++) {
-
-                    }
                     break;
-                        case 4: //no sale
-                            System.out.println("Listar personas");
-                            /*for (Object item: agenda.get(agenda)) {
-                                System.out.println(item);
-                            }*/
-                            break;
-                    }
+                case 4:
+                    //no sale
+                    break;
+
+            }
+
         } while (opcion != 5) ;
         entrada.close();
     }
