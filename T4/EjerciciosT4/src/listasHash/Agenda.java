@@ -43,18 +43,12 @@ public class Agenda {
                         System.out.println(item);
                     }
                     break;
-                case 3://no sale
+                case 3:
                     System.out.println("Borrar personas");
                     System.out.println("Que dni quieres eliminar");
                     dni = entrada.next();
-                    Enumeration <String> elementos = agenda.keys();
-                    while (elementos.hasMoreElements()) {
-                        if (elementos.nextElement()==dni){
-                            agenda.remove(dni);
-                            System.out.println("Persona borrada");
-
-                        }
-                    }
+                    agenda.remove(dni);
+                    System.out.println("Persona borrada");
                     break;
                 case 4:
                     System.out.println("Listar personas");
