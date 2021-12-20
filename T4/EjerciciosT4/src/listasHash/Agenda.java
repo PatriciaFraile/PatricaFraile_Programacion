@@ -1,4 +1,6 @@
 package listasHash;
+
+import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -41,18 +43,36 @@ public class Agenda {
                         System.out.println(item);
                     }
                     break;
-                case 3: //no sale
+                case 3://no sale
                     System.out.println("Borrar personas");
                     System.out.println("Que dni quieres eliminar");
                     dni = entrada.next();
+                    Enumeration <String> elementos = agenda.keys();
+                    while (elementos.hasMoreElements()) {
+                        if (elementos.nextElement()==dni){
+                            agenda.remove(dni);
+                            System.out.println("Persona borrada");
+
+                        }
+                    }
                     break;
                 case 4:
-                    //no sale
-                    break;
+                    System.out.println("Listar personas");
+                    Enumeration<Object[]> elemento = agenda.elements();
+                    while(elemento.hasMoreElements()){
+                         Object [] element = elemento.nextElement();
+                        for (Object item: element) {
+                            System.out.println(item);
+                        }
 
+                    }
+
+                    break;
+                default:
+                    System.out.println("Saliste");
             }
 
-        } while (opcion != 5) ;
+        } while (opcion != 5);
         entrada.close();
     }
 }
