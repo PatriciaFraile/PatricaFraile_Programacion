@@ -32,4 +32,10 @@ public class Persona2 {
         peso = 0.0;
 
     }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 }

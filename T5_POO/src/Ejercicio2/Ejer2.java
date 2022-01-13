@@ -24,5 +24,12 @@ public class Ejer2 {
         persona2.mostrarDatos();
         System.out.println("Persona 3");
         persona3.mostrarDatos();
+        persona1.setEdad(20);
+        persona1.mostrarDatos();
+        persona2.setEdad(20);
+        persona2.mostrarDatos();
+        persona3.setEdad(20);
+        persona3.mostrarDatos();
+
     }
 }
