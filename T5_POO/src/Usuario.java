@@ -29,6 +29,25 @@ public class Usuario {
 
 
     //metodos
+    public void mostrarDatos(){
+        System.out.println("Nombre" +nombre);
+        System.out.println("Password" +password);
+        System.out.println("Edad" +edad);
+        System.out.println("Gmail" +correoElectronico);
+        System.out.println("Apellido" +apellido);
+        System.out.println("Fecha" +fecha);
+    }
+    public String mostrarDatosRetorno(){
+        return  "Nombre" +nombre+"\n"+"Apellidos"+apellido+"\n";
+
+    }
+    public void saludar(String nombreSaludar){
+        System.out.println("Hola"+nombreSaludar+"que tal estas");
+    }
+    public void saludar(Usuario usuario){
+        System.out.println("Hola"+usuario.getNombre()+"que tal estas");
+
+    }
 
     //metodos especiales getters y setters
     public String getPassword(){
