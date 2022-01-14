@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 public class Personas {
     public static void main(String[] args) {
         Persona persona1 = new Persona("Paula", "Hernández", "6849846B", 12, 20, 45.7);
@@ -12,7 +14,5 @@ public class Personas {
         persona3.mostrarDatos();
         System.out.println("Persona 4");
         persona4.mostrarDatos();
-
-
     }
 }

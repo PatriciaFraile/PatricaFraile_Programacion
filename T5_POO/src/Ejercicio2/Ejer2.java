@@ -18,11 +18,11 @@ public class Ejer2 {
         Persona2 persona1 = new Persona2(nombre,apellidos,dni,edad,altura,peso);
         Persona2 persona2 = new Persona2("Paula", "Hernández");
         Persona2 persona3 = new Persona2();
-        System.out.println("Persona 1");
+        System.out.println("Ejercicio1.Personas.Persona 1");
         persona1.mostrarDatos();
-        System.out.println("Persona 2");
+        System.out.println("Ejercicio1.Personas.Persona 2");
         persona2.mostrarDatos();
-        System.out.println("Persona 3");
+        System.out.println("Ejercicio1.Personas.Persona 3");
         persona3.mostrarDatos();
         persona1.setEdad(20);
         persona1.mostrarDatos();
