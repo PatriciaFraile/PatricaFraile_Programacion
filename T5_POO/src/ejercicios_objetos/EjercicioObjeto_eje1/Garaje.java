@@ -1,42 +1,30 @@
 package ejercicios_objetos.EjercicioObjeto_eje1;
 
 public class Garaje {
-    private Coche Micoche;
-    private String averiaAsociada;
+    private Coche coche;
+    private String averia;
     private int numCoches;
 
-    public void Garaje() {
-        this.Micoche = null;
-        this.averiaAsociada = " ";
-        this.numCoches = 0;
+    // constructor por defecto se da por escrito
+
+    public void devolverCoche(){
+        this.coche = null;
     }
 
-    public boolean Atender () {
-        if (numCoches == 1) {
-            System.out.println("Ya estamos atendiendo un coche ");
+    public boolean aceptarCoche(Coche coche, String averia){
+        if (this.coche!=null){
             return false;
         } else {
-            System.out.println("Podemos aceptar su coche");
+            numCoches++;
+            this.coche = coche;
+            if (averia.equalsIgnoreCase("aceite")){
+                coche.getMotor().setLitros(coche.getMotor().getLitros()+10);
+            } else {
+                coche.getMotor().setLitros(coche.getMotor()
+                        .getLitros()+(int)(Math.random()*1000));
+            }
             return true;
         }
-    }
-    public void atenderCoche(Coche coche , String descAveria){
-        if(Atender()==true){
-            System.out.println("Podemos aceptar su coche");
-            this.Micoche=coche;
-            this.averiaAsociada= descAveria;
-            if(this.averiaAsociada.equalsIgnoreCase("aceite")){//incompleto
-                Micoche.getMotor().getLitros();
-                this.MiCoche.getMotor().setLitros(litros+10);
-            }else{
-
-            }
-        }
-    }
-
-    public void devolverCoche() {
-        this.numCoches = 0;
-        System.out.println("Hemos devuelto su coche");
     }
 
 }
