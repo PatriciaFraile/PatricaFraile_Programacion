@@ -1,19 +1,15 @@
 package ejercicios_objetos.EjercicioObjeto_eje1;
 
-public class motor {
-    private int litrAceite, CV, motor;
+public class Coche {
     private String marca, modelo;
+    private int motor;
     private double precioAcumulado;
 
-    public motor() {
-        CV = 12;
-        litrAceite = 0;
+    public Coche(String modelo, String marca) {
+        this.modelo = modelo;
+        this.marca = marca;
     }
-    public  motor(String modelo , String marca){
-        this.modelo= modelo;
-        this.marca= marca;
-    }
-    public void importeGastado(double acumulado){
+    public void acumularAveria(double acumulado) {
         this.precioAcumulado += acumulado;
     }
 
@@ -49,19 +45,6 @@ public class motor {
         this.motor = motor;
     }
 
-    public int getCV() {
-        return CV;
-    }
 
-    public void setCV(int CV) {
-        this.CV = CV;
-    }
-
-    public int getLitrAceite() {
-        return litrAceite;
-    }
-
-    public void setLitrAceite(int litrAceite) {
-        this.litrAceite = litrAceite;
-    }
 }
+
