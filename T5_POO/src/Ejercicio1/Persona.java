@@ -37,6 +37,30 @@ public class Persona {
         altura = 0;
     }
 
+    public void IncrementarEdad(int edadIncremento){
+        this.edad+= edadIncremento;
+
+    }
+    public  String estadoIMC(){
+         double IMC = calcularIMC()*1000;
+         String estado =" ";
+         if(IMC<18){
+             estado = "normal";
+        }else if(IMC >18.5 && IMC<24.9){
+             estado = "normal";
+
+        }else if(IMC>=25 &&IMC<29.9) {
+             estado = "Peso superior a normal";
+         } else{
+             estado="Obesidad";
+         }
+         return estado;
+    }
+public double calcularIMC(){
+        double imc = this.peso/Math.pow(this.altura,2);
+
+        return imc;
+}
 
     public void mostrarDatos() {
         System.out.println("Nombre:" + nombre);
@@ -45,5 +69,27 @@ public class Persona {
         System.out.println("dni:" + "\t" + dni);
         System.out.println("Altura:" + "\t" + altura);
         System.out.println("Peso:" + "\t" + peso);
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
     }
 }
