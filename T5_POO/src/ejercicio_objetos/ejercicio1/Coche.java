@@ -1,4 +1,4 @@
-package ejercicios_objetos.EjercicioObjeto_eje1;
+package ejercicio_objetos.ejercicio1;
 
 public class Coche {
     private String marca, modelo;
@@ -9,6 +9,7 @@ public class Coche {
         this.modelo = modelo;
         this.marca = marca;
     }
+
     public void acumularAveria(double acumulado) {
         this.precioAcumulado += acumulado;
     }
@@ -45,6 +46,4 @@ public class Coche {
         this.motor = motor;
     }
 
-
 }
-
