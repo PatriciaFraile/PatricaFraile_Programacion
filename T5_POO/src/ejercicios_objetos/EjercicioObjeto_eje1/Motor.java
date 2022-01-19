@@ -1,28 +1,26 @@
 package ejercicios_objetos.EjercicioObjeto_eje1;
 
 public class Motor {
-    private int cv, litros;
+    private int litros;
+    private int cv;
 
-    public Motor(int cv, int litros){
+    public Motor (int cv){
+        this.litros = 0;
         this.cv = cv;
+    }
+
+    public Motor (int cv,int litros){
         this.litros = litros;
-    }
-
-    public Motor(int cv){
         this.cv = cv;
-        // litros = 0;
-    }
-
-    public int getCv() {
-        return cv;
     }
 
     public int getLitros() {
         return litros;
     }
-
     public void setLitros(int litros) {
         this.litros = litros;
     }
-
+    public int getCv() {
+        return cv;
+    }
 }

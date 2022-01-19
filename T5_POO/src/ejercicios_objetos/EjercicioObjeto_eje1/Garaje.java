@@ -5,26 +5,21 @@ public class Garaje {
     private String averia;
     private int numCoches;
 
-    // constructor por defecto se da por escrito
-
-    public void devolverCoche(){
-        this.coche = null;
-    }
-
-    public boolean aceptarCoche(Coche coche, String averia){
-        if (this.coche!=null){
+    //metodos
+    public boolean aceptarCoche (Coche coche,String averia){
+        if(this.coche != null){
             return false;
-        } else {
-            numCoches++;
+        }else {
             this.coche = coche;
-            if (averia.equalsIgnoreCase("aceite")){
+            if(averia.equalsIgnoreCase("aceite")){
                 coche.getMotor().setLitros(coche.getMotor().getLitros()+10);
-            } else {
-                coche.getMotor().setLitros(coche.getMotor()
-                        .getLitros()+(int)(Math.random()*1000));
             }
+            numCoches ++;
             return true;
         }
+    }
+    public void devolverCoche (){
+        this.coche = null;
     }
 
 }
