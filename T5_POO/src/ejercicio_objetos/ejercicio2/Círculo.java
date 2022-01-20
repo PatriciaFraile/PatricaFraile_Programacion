@@ -1,7 +1,7 @@
 package ejercicio_objetos.ejercicio2;
 
 public class Círculo {
-    private double radio, diametro, area, pi;
+    private double radio, diametro;
 
     public Círculo() {
     }
@@ -10,14 +10,13 @@ public class Círculo {
         this.radio = radio;
     }
 
-    public double carcularCuadrado(double pi) {
-        this.pi = 3.14;
-        double resultadoCuadrado = pi * (Math.pow(radio, 2));
+    public double carcularCuadrado() {
+        double resultadoCuadrado = Math.PI * (Math.pow(radio, 2));
         return resultadoCuadrado;
     }
 
     public double calcularDiametro() {
-        double resultadoDiametro = 2 * diametro;
+        double resultadoDiametro = 2 * radio;
         return resultadoDiametro;
     }
 }

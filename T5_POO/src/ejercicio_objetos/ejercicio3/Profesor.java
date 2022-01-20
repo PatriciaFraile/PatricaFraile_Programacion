@@ -2,17 +2,15 @@ package ejercicio_objetos.ejercicio3;
 
 public class Profesor {
 
-    public void ponerNotas(Alumno calificacion) {
+    public void ponerNotas(Alumno alumno) {
 
-        calificacion.getAsignatura1().setCalificación(Math.random() * 11);
-        calificacion.getAsignatura2().setCalificación(Math.random() * 11);
-        calificacion.getAsignatura3().setCalificación(Math.random() * 11);
+        alumno.getAsignatura1().setCalificación((int) Math.random() * 11);
+        alumno.getAsignatura2().setCalificación((int) Math.random() * 11);
+        alumno.getAsignatura3().setCalificación((int) Math.random() * 11);
     }
 
-    public void calcularMedia(Alumno calificacionMedia) {
-        calificacionMedia.getAsignatura1();
-        return;
-
-
+    public double calcularMedia(Alumno alumno) {
+        double media = (alumno.getAsignatura1().getCalificación() + alumno.getAsignatura3().getCalificación() + alumno.getAsignatura3().getCalificación()) / 3;
+        return media;
     }
 }
