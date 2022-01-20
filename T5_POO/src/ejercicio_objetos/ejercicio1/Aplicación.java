@@ -1,7 +1,8 @@
 package ejercicio_objetos.ejercicio1;
 
 public class Aplicación {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//mirar el fallo
+
         Garaje garaje = new Garaje();
 
         Motor coche2= new Motor(110);

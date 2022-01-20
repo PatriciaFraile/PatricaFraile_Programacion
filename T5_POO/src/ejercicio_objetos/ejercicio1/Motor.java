@@ -13,7 +13,6 @@ public class Motor {
         this.litros=litros;
         this.cv=cv;
     }
-
     public int getLitros() {
         return litros;
     }
@@ -29,4 +28,5 @@ public class Motor {
     public void setCv(int cv) {
         this.cv = cv;
     }
+
 }

@@ -2,7 +2,7 @@ package ejercicio_objetos.ejercicio1;
 
 public class Coche {
     private String marca, modelo;
-    private int motor;
+    private Motor motor;
     private double precioAcumulado;
 
     public Coche(String modelo, String marca) {
@@ -38,11 +38,11 @@ public class Coche {
         this.marca = marca;
     }
 
-    public int getMotor() {
+    public  Motor getMotor() {
         return motor;
     }
 
-    public void setMotor(int motor) {
+    public void setMotor(Motor motor) {
         this.motor = motor;
     }
 
