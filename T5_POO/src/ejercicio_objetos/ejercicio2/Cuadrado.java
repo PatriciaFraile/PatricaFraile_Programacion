@@ -13,7 +13,7 @@ public class Cuadrado {
         area = base*altura;
         return area;
     }
-    public double calcuPerimetro(double perimetro){
+    public double calcuPerimetro(){
         perimetro = 2*area+2*base;
         return perimetro;
     }
