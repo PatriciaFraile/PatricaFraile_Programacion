@@ -2,6 +2,7 @@ package ejercicio_objetos.ejercicio2;
 
 public class Triangulo {
     private int altura, base;
+    private double area;
 
     public Triangulo() {
     }
@@ -11,9 +12,31 @@ public class Triangulo {
         this.base = base;
     }
 
-    public int calcularTriangulo() {
-        int resultadoTriangulo = (this.altura * this.base) / 2;
-        return resultadoTriangulo;
+    public void calcularTriangulo() {
+        this.area = (this.altura * this.base) / 2;
     }
 
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getBase() {
+        return base;
+    }
+
+    public void setBase(int base) {
+        this.base = base;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
 }

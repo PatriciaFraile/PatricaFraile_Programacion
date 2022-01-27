@@ -1,7 +1,7 @@
 package ejercicio_objetos.ejercicio2;
 
 public class Círculo {
-    private double radio, diametro;
+    private double radio, diametro , area;
 
     public Círculo() {
     }
@@ -10,13 +10,36 @@ public class Círculo {
         this.radio = radio;
     }
 
-    public double carcularCuadrado() {
-        double resultadoCuadrado = Math.PI * (Math.pow(radio, 2));
-        return resultadoCuadrado;
+    public void carcularCuadrado() {
+        this.area = Math.PI * (Math.pow(radio, 2));
+
     }
 
-    public double calcularDiametro() {
-        double resultadoDiametro = 2 * radio;
-        return resultadoDiametro;
+    public void calcularDiametro() {
+        this.diametro = 2 * radio;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+
+    public double getDiametro() {
+        return diametro;
+    }
+
+    public void setDiametro(double diametro) {
+        this.diametro = diametro;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
     }
 }

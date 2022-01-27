@@ -7,11 +7,13 @@ public class Entrada {
         Scanner entrada = new Scanner(System.in);
         int opcion;
         Triangulo triangulo = new Triangulo(12, 20);
-        System.out.println(triangulo.calcularTriangulo());
+        triangulo.calcularTriangulo();
+        System.out.println(triangulo.getArea());
         Círculo circulo = new Círculo(33.4);
-        System.out.println(circulo.carcularCuadrado());
-        System.out.println(circulo.calcularDiametro());
+        circulo.calcularDiametro();
+        System.out.println(circulo.getDiametro());
         Cuadrado cuadrado = new Cuadrado(13, 13);
+        cuadrado.calcularArea();
         System.out.println(cuadrado.calcularArea());
         System.out.println("Modificación");
 
@@ -42,8 +44,9 @@ public class Entrada {
                                 break;
                             case 2:
                                 System.out.println("Mostrar los datos");
+                                triangulo1.calcularTriangulo();
 
-                                    System.out.println("Area:" + triangulo1.calcularTriangulo());
+                                System.out.println("Area:" + triangulo1.getArea());
 
 
                                 break;
@@ -72,9 +75,11 @@ public class Entrada {
                                 break;
                             case 3:
                                 System.out.println("Has elegido mostrar los datos");
+                                circulo1.carcularCuadrado();
+                                circulo1.calcularDiametro();
 
-                                    System.out.println("Radio:" + circulo1.carcularCuadrado());
-                                    System.out.println("Diametro:" + circulo1.calcularDiametro());
+                                System.out.println("Radio:" + circulo1.getArea());
+                                System.out.println("Diametro:" + circulo1.getDiametro());
 
                                 break;
                         }
@@ -86,31 +91,31 @@ public class Entrada {
                     base = entrada.nextInt();
                     System.out.println("Introduce la altura");
                     altura = entrada.nextInt();
-                    Cuadrado cuadrado1 = new Cuadrado(base,altura);
-                    do{
+                    Cuadrado cuadrado1 = new Cuadrado(base, altura);
+                    do {
                         System.out.println("1.Calcula el area");
                         System.out.println("2.Calcula el perimetro");
                         System.out.println("3.Mostrar datos");
                         System.out.println("Que operación quieres hacer");
-                        opcion= entrada.nextInt();
-                        switch (opcion){
-                            case 1 :
+                        opcion = entrada.nextInt();
+                        switch (opcion) {
+                            case 1:
                                 System.out.println("Has elegido calcular el area");
                                 cuadrado1.calcularArea();
                                 break;
                             case 2:
                                 System.out.println("Has elegido calcular el perimetro");
-                               cuadrado1.calcuPerimetro();
-                               break;
+                                cuadrado1.calcuPerimetro();
+                                break;
                             case 3:
                                 System.out.println("Mostrar los datos");
-                                    System.out.println("Area : " +cuadrado1.calcularArea());
-                                    System.out.println("Perimetro :" +cuadrado1.calcuPerimetro());
+                                System.out.println("Area : " + cuadrado1.calcularArea());
+                                System.out.println("Perimetro :" + cuadrado1.calcuPerimetro());
 
                                 break;
                         }
 
-                    }while(opcion!=3);
+                    } while (opcion != 3);
                 case 4:
                     System.out.println("Has elegido salir");
 

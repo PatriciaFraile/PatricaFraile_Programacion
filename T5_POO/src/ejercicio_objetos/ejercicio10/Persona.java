@@ -63,7 +63,7 @@ public class Persona {
     }
     }
 
-    public static void MuestraMayorDeEdad(Persona p) {
+    public  void MuestraMayorDeEdad(Persona p) {
 
         if (p.esMayorEdad()) {
             System.out.println("La persona es mayor de edad");
