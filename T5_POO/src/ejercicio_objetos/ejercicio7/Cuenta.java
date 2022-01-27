@@ -5,7 +5,8 @@ import java.util.ArrayList;
 public class Cuenta {
     private int identificador;
     private boolean estado;
-    private ArrayList<Object> articulo = new ArrayList();
+
+     ArrayList<Object> articulo = new ArrayList();
 
     public Cuenta(int identificador) {
         this.identificador = identificador;

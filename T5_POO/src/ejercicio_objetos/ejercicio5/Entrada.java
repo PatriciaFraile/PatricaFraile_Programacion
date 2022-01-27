@@ -39,6 +39,9 @@ public class Entrada {
                     break;
                 case 4 :
                     System.out.println("Buscar persona");
+                    System.out.println("Que dni quieres buscar");
+                     dni = entrada.next();
+                    agenda.buscar(dni);
                     break;
                 case 5 :
                     System.out.println("Listar persona ");

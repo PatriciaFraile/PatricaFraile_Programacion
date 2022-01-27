@@ -3,9 +3,11 @@ package ejercicio_objetos.ejercicio5;
 import java.util.ArrayList;
 
 public class Agenda {
+    private ArrayList<Persona> personas;
 
-    ArrayList<Persona> personas = new ArrayList();
-
+    public Agenda() {
+        this.personas = new ArrayList();
+    }
 
     public void agregar(Persona persona) {
         personas.add(persona);
@@ -34,11 +36,27 @@ public class Agenda {
 
     }
 
-    public void buscar() {
+    public void buscar(String dni , String nombre , int telefono) {
+        boolean encontrada = true;
+        for (int i = 0; i < personas.size(); i++) {
+            if(personas.get(i).getDNI().equalsIgnoreCase(dni)){
+                System.out.println("Nombre:\t"+nombre + "\tDNI:\t"+ dni+"\tTelefono\t"+telefono);
+                break;
+            }
+            if (!encontrada){
+                System.out.println("Persona no encontrada");
+                break;
+            }
 
+        }
+        //incompleto
     }
 
     public void listar() {
+        for(Object item : personas){
+            ((Persona)item).mostrarDatos();
+        }
+
 
     }
 
