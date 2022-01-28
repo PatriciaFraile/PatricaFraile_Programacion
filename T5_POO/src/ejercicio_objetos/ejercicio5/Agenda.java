@@ -31,8 +31,7 @@ public class Agenda {
 
     }
 
-    public void editar() {
-
+    public void editar(String dni) {
 
     }
 

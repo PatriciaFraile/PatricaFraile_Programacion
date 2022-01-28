@@ -25,18 +25,18 @@ public class Entrada {
         persona2.setPeso(90.5);
         persona2.setAltura(1.80);
         System.out.println("Persona1");
-        //muestraMensajePeso(persona1);
-        //MuestraMayorDeEdad(persona1);
+        persona1.muestraMensajePeso(persona1);
+        persona1.muestraMayorDeEdad(persona1);
         System.out.println(persona1.toString());
 
         System.out.println("Persona2");
-        //muestraMensajePeso(persona2);
-        //MuestraMayorDeEdad(persona2);
+        persona2.muestraMensajePeso(persona2);
+        persona2.muestraMayorDeEdad(persona2);
         System.out.println(persona2.toString());
 
         System.out.println("Persona3");
-        //muestraMensajePeso(persona3);
-        //MuestraMensajePeso(persona3);
+        persona3.muestraMensajePeso(persona3);
+        persona3.muestraMayorDeEdad(persona3);
         System.out.println(persona3.toString());
 
 
