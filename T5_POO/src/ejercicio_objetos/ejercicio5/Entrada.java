@@ -7,7 +7,7 @@ public class Entrada {
         Scanner entrada = new Scanner(System.in);
         Agenda agenda = new Agenda();
         int opcion;
-        do{
+        do {
             System.out.println("1.Agregar persona a la agenda");
             System.out.println("2. Borrar persona");
             System.out.println("3.Editar persona ");
@@ -15,8 +15,8 @@ public class Entrada {
             System.out.println("5.Listar agenda");
             System.out.println("Que operación quieres hacer");
             opcion = entrada.nextInt();
-            switch (opcion){
-                case 1 :
+            switch (opcion) {
+                case 1:
                     System.out.println("Agregar persona");
                     System.out.println("Escribe el nombre");
                     String nombre = entrada.next();
@@ -24,13 +24,14 @@ public class Entrada {
                     String DNI = entrada.next();
                     System.out.println("Escribe tu telefono");
                     int telefono = entrada.nextInt();
-                    Persona persona = new Persona(nombre ,DNI , telefono);
+                    Persona persona = new Persona(nombre, DNI, telefono);
+                    agenda.agregar(persona);
                     break;
                 case 2:
                     System.out.println("Borrar persona");
                     System.out.println("Que dni quieres eliminar");
-                   String dni = entrada.next();
-                   agenda.borrar(dni);
+                    String dni = entrada.next();
+                    agenda.borrar(dni);
 
                     break;
                 case 3:
@@ -38,22 +39,19 @@ public class Entrada {
 
 
                     break;
-                case 4 :
+                case 4:
                     System.out.println("Buscar persona");
                     System.out.println("Que dni quieres buscar");
                     dni = entrada.next();
                     agenda.buscar(dni);
                     break;
-                case 5 :
-                    System.out.println("Listar persona ");
+                case 5:
                     agenda.listar();
+
                     break;
             }
 
 
-
-
-
-        }while (opcion!=5);
+        } while (opcion != 5);
     }
 }

@@ -1,18 +1,20 @@
 package ejercicio_objetos.ejercicio5;
 
 public class Persona {
-    private String nombre , DNI;
+    private String nombre, DNI;
     private int telefono;
 
-    public Persona(){
+    public Persona() {
 
     }
-    public Persona(String nombre , String DNI , int telefono) {
+
+    public Persona(String nombre, String DNI, int telefono) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.DNI = DNI;
     }
-    public void mostrarDatos(){
+
+    public void mostrarDatos() {
         System.out.println(nombre);
         System.out.println(telefono);
         System.out.println(DNI);
