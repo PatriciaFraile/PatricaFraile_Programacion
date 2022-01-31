@@ -8,9 +8,9 @@ public class Entrada {
         System.out.println("Introduce la edad");
         int edad = entrada.nextInt();
         System.out.println("Introduce el peso");
+        double peso = entrada.nextDouble();
         System.out.println("Introduce el sexo");
         char sexo = entrada.next().charAt(0);
-        double peso = entrada.nextDouble();
         System.out.println("Introduce la altura");
         double altura = entrada.nextDouble();
         Persona persona1 = new Persona();

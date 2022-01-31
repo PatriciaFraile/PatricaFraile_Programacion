@@ -36,6 +36,9 @@ public class Entrada {
                     break;
                 case 3:
                     System.out.println("Editar persona");
+                    System.out.println("Que DNI quieres cambiar");
+                    dni = entrada.next();
+                    agenda.editar(dni);
 
 
                     break;

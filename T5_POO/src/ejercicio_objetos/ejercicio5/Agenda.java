@@ -13,8 +13,28 @@ public class Agenda {
         this.personas = new ArrayList();
     }
 
+    private  Persona existePersona(String dni){
+        Persona persona = null;
+        for (Persona item: personas) {
+            if(item.getDNI().equalsIgnoreCase(item.getDNI())){
+                return item;
+            }
+            
+        }
+        return  persona;
+
+
+
+    }
+
     public void agregar(Persona persona) {
-        personas.add(persona);
+
+        if(existePersona(persona.getDNI())==null){
+            personas.add(persona);
+        }else{
+            System.out.println("Ya existe ");
+        }
+
 
     }
 
