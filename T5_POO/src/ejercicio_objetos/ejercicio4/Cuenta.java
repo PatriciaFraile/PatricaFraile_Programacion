@@ -6,8 +6,8 @@ package ejercicio_objetos.ejercicio4;
     private int IBAN;
     private int pin;
     private String dni;
-
     private double saldo;
+
    public Cuenta(){
        this.dni = dni;
        this.pin = pin;
