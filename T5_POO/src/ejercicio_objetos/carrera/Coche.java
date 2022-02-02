@@ -1,4 +1,4 @@
-package ejercicio_objetos.ejercicio6;
+package ejercicio_objetos.carrera;
 
 public class Coche {
     private int caballos , velocidad;

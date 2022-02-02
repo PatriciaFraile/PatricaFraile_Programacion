@@ -1,7 +1,8 @@
-package ejercicio_objetos.ejercicio6;
+package ejercicio_objetos.carrera;
 
 public class Entrada {
     public static void main(String[] args) {
+
         Coche coche1 = new Coche();
         Coche coche2 = new Coche("Toyota", "11344DQ", 4566);
         System.out.println("Coche1");

@@ -1,18 +1,25 @@
 package ejercicio_objetos.ejercicio4;
 
 
+import ejercicio_objetos.ejercicio5.Persona;
 
- public class Cuenta {
+import java.util.ArrayList;
+
+public class Cuenta {
     private int IBAN;
     private int pin;
     private String dni;
     private double saldo;
+    private ArrayList<Persona> personas;
 
-   public Cuenta(){
+
+    public Cuenta(){
        this.dni = dni;
        this.pin = pin;
        this.saldo = saldo;
-   }
+        this.personas = new ArrayList();
+
+    }
 
 
     public Cuenta(String dni, int pin, double saldo) {
