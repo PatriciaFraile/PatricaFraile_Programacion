@@ -1,17 +1,15 @@
-package ejercicio_objetos.correcionExamen;
+package ejercicioPizzeria;
 
 import java.util.ArrayList;
 
 public class Pizza {
-
     private String nombre;
     private double precio;
     private int id;
     private ArrayList<Ingredientes> listaIngredientes;
     private boolean estado;
 
-    public Pizza(int id, String nombre) {
-        this.id = id;
+    public Pizza(String nombre) {
         this.nombre = nombre;
         listaIngredientes = new ArrayList<>();
         //estado = false
@@ -19,8 +17,7 @@ public class Pizza {
 
     }
 
-    public Pizza(int id, String nombre, ArrayList listaIngredientes) {
-        this.id = id;
+    public Pizza(String nombre, ArrayList listaIngredientes) {
         this.nombre = nombre;
         this.listaIngredientes = listaIngredientes;
 
@@ -33,12 +30,13 @@ public class Pizza {
     }
 
     public void verDatos() {
+        calcularPrecio();
         System.out.println(nombre);
         System.out.println(id);
         System.out.println(estado);
         System.out.println(precio);
         for (Ingredientes item : listaIngredientes) {
-            System.out.println(item.getNombre() + "-" + item.getPrecio());
+            System.out.println("\t" + item.getNombre() + "-" + item.getPrecio());
         }
     }
 

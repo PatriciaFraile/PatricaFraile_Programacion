@@ -1,4 +1,4 @@
-package ejercicio_objetos.correcionExamen;
+package ejercicioPizzeria;
 
 public class Ingredientes {
     private String nombre;
