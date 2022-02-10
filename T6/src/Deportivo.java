@@ -12,16 +12,14 @@ public class Deportivo extends Coche {
         this.par = par;
 
     }
-    //calcularvelocidad
-    //deportivo --> 30-40
-    //electricos --> 20-30
-    //suv-->10-20
 
     @Override //cambiar cosas
     public void calcularVelocidad(int velocidad) {
         super.calcularVelocidad(velocidad);
         System.out.println("Velocidad calculada");
-        this.velocidad = (int) (Math.random() * 11) + 30;
+        int aleatorio = (int) (Math.random() * 11) + 30;
+        setVelocidad(getVelocidad() + aleatorio);
+        // tambien se puede calcular this.velocidad+=aleatorio
     }
 
     public int getPar() {

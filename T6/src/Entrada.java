@@ -4,8 +4,17 @@ public class Entrada {
         coche.calcularVelocidad(80);
         System.out.println(coche.getVelocidad());
         Deportivo deportivo = new Deportivo("234B", "234", 200, 2500, 600);
+        System.out.println("Deportivo");
+        deportivo.calcularVelocidad(678);
+        System.out.println(deportivo.getVelocidad());
         Electrico electrico = new Electrico("2345", "222", 200, 300, 400);
-        Suv suv = new Suv("2345", "3456", 455, 678, 111);
+        System.out.println("Electrico");
+        electrico.calcularVelocidad(1234);
+        System.out.println(electrico.getVelocidad());
+        Suv suv = new Suv("2345", "3456", 455, 678, true);
+        System.out.println("Suv");
+        suv.calcularVelocidad(89);
+        System.out.println(suv.getVelocidad());
 
     }
 }

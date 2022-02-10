@@ -11,7 +11,9 @@ public class Electrico extends Coche {
 
     @Override
     public void calcularVelocidad(int velocidad) {
-        this.velocidad = (int) (Math.random() * 11) + 20;
+        int aleatorio = (int) (Math.random() * 11) + 20;
+        setVelocidad(getVelocidad() + aleatorio);
+        // tambien se puede calcular this.velocidad+=aleatorio
     }
 
     public int getBateria() {
