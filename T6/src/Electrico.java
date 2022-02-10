@@ -16,6 +16,12 @@ public class Electrico extends Coche {
         // tambien se puede calcular this.velocidad+=aleatorio
     }
 
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos();
+        System.out.println("Bateria\t"+bateria);
+    }
+
     public int getBateria() {
         return bateria;
     }

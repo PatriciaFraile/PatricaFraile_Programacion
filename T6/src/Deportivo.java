@@ -13,6 +13,12 @@ public class Deportivo extends Coche {
 
     }
 
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos();
+        System.out.println("Par\t" +par);
+    }
+
     @Override //cambiar cosas
     public void calcularVelocidad(int velocidad) {
         super.calcularVelocidad(velocidad);

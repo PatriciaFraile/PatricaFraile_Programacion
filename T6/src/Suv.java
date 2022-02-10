@@ -16,6 +16,12 @@ public class Suv extends Coche {
         // tambien se puede calcular this.velocidad+=aleatorio
     }
 
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos();
+        System.out.println("Traccion\t"+traccion);
+    }
+
     public boolean isTraccion() {
         return traccion;
     }

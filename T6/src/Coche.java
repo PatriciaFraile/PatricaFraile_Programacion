@@ -12,6 +12,12 @@ public class Coche {
 
     public Coche() {
     }
+    public void mostrarDatos(){
+        System.out.println("Matricula\t" +matricula);
+        System.out.println("Bastidor\t" +bastidor);
+        System.out.println("CV\t" +cv);
+        System.out.println("CC\t" + cc);
+    }
 
     public void calcularVelocidad(int velocidad) {
         this.velocidad += velocidad;
