@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Concesionario {
-    ArrayList<Coche> listaCoches;
+     private ArrayList<Coche> listaCoches;
 
     public Concesionario() {
         listaCoches = new ArrayList<>();
