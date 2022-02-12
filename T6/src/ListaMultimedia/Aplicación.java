@@ -49,7 +49,7 @@ public class Aplicación {
                                 break;
 
                         }
-                    } while (opcion != 3);
+                    } while (opcion == 3);
                     break;
                 case 2:
                     System.out.println("--Eliminar colección");
@@ -58,10 +58,20 @@ public class Aplicación {
                     entrada.eliminar(id);
                     break;
                 case 3:
-                    
+                    System.out.println("--Listar colección");
+                        do {
+                            System.out.println("1.Audio\n2.Libro\n3.Video\n4.Todos");
+                            System.out.println("Que opcion quieres");
+                            opcion = entradaLista.nextInt();
+                            switch (opcion) {
+                                case 1:
+                                    System.out.println("--Audio--");
 
-            }
+                            }
+                        } while (opcion != 4);
 
-        } while (opcion != 4);
+
+                    }
+        }while(opcion!=4);
     }
 }
