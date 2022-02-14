@@ -1,21 +1,23 @@
 package ListaMultimedia;
 
 public class Video extends ElementoMultimedia {
-    private String director, autor;
+    private String director, actor;
 
     public Video() {
     }
 
-    public Video(String director, String autor) {
+    public Video(String titulo, String autor, String tamaño, String formato, String id, String director, String actor) {
+        super(titulo, autor, tamaño, formato, id);
         this.director = director;
-        this.autor = autor;
+        this.actor = actor;
     }
+
 
     @Override
     public void mostrarDatos() {
         super.mostrarDatos();
         System.out.println("El director es\t" + director);
-        System.out.println("El autor es\t" + autor);
+        System.out.println("El actor es\t" + actor);
     }
 
     public String getDirector() {
@@ -26,13 +28,11 @@ public class Video extends ElementoMultimedia {
         this.director = director;
     }
 
-    @Override
-    public String getAutor() {
-        return autor;
+    public String getActor() {
+        return actor;
     }
 
-    @Override
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setActor(String actor) {
+        this.actor = actor;
     }
 }

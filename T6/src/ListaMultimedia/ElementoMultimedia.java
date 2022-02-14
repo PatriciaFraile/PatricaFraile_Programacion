@@ -1,13 +1,13 @@
 package ListaMultimedia;
 
 public class ElementoMultimedia {
-    protected int id;
-    protected String titulo, autor, tamaño, formato;
+
+    protected String id, titulo, autor, tamaño, formato;
 
     public ElementoMultimedia() {
     }
 
-    public ElementoMultimedia(String titulo, String autor, String tamaño, String formato, int id) {
+    public ElementoMultimedia(String titulo, String autor, String tamaño, String formato, String id) {
         this.titulo = titulo;
         this.autor = autor;
         this.tamaño = tamaño;
@@ -23,11 +23,11 @@ public class ElementoMultimedia {
         System.out.println("Id\t" + id);
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

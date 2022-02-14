@@ -7,10 +7,12 @@ public class Audio extends ElementoMultimedia {
     public Audio() {
     }
 
-    public Audio(int duracion, String soporte) {
+    public Audio(String titulo, String autor, String tamaño, String formato, String id, int duracion, String soporte) {
+        super(titulo, autor, tamaño, formato, id);
         this.duracion = duracion;
         this.soporte = soporte;
     }
+
 
     @Override
     public void mostrarDatos() {

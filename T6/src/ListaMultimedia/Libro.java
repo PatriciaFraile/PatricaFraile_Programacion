@@ -5,10 +5,10 @@ public class Libro extends ElementoMultimedia {
     private int numeroPaginas;
 
     public Libro() {
-
     }
 
-    public Libro(int ISBN, int numeroPaginas) {
+    public Libro(String titulo, String autor, String tamaño, String formato, String id, int ISBN, int numeroPaginas) {
+        super(titulo, autor, tamaño, formato, id);
         this.ISBN = ISBN;
         this.numeroPaginas = numeroPaginas;
     }
