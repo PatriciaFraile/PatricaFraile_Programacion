@@ -1,5 +1,5 @@
 package ListaMultimedia;
-//incompleto
+
 
 import java.util.Scanner;
 
@@ -89,21 +89,7 @@ public class Aplicación {
                     break;
                 case 3:
                     System.out.println("--Listar colección");
-                    do {
-                        System.out.println("1.Audio\n2.Libro\n3.Video");
-                        System.out.println("Que opcion quieres");
-                        opcion = entradaLista.nextInt();
-                        switch (opcion) {
-                            case 1:
-                                System.out.println("--Audio--");
-                                break;
-                            case 2:
-                                System.out.println("--Libro--");
-                                entrada.listar();
-                                break;
-                        }
-
-                    } while (opcion != 3);
+                    entrada.listar();
             }
         } while (opcion != 4);
     }

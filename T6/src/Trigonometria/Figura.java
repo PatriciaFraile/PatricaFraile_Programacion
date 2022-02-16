@@ -1,18 +1,35 @@
 package Trigonometria;
 
 public class Figura {
-    protected int altura, base;
+    protected double altura, base;
 
-    public Figura(int altura, int base) {
+    public Figura(double altura, double base) {
         this.base = base;
         this.altura = altura;
     }
-    public double calcularArea(){
-        return calcularArea();
+
+    public void calcularArea() {
+
     }
 
     public void mostrarDatos() {
         System.out.println("La base es \t" + base);
         System.out.println("La altura es \t" + altura);
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getBase() {
+        return base;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
     }
 }

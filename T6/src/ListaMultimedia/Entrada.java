@@ -5,9 +5,9 @@ import java.util.ArrayList;
 public class Entrada {
     private ArrayList<ElementoMultimedia> lista;
     ElementoMultimedia elemento = new ElementoMultimedia();
-    Libro libro = new Libro();
-    Audio audio = new Audio();
-    Video video = new Video();
+    //Libro libro = new Libro();
+    //Audio audio = new Audio();
+    //Video video = new Video();
 
 
     public Entrada() {
@@ -38,6 +38,10 @@ public class Entrada {
     }
 
     public void listar() {
+        for (ElementoMultimedia item: lista) {
+            System.out.println("--Imprimiendo--");
+            item.mostrarDatos();
+        }
 
     }
 }
