@@ -1,12 +1,11 @@
 package Trigonometria;
 
-public class Circulo extends Figura {
+public final class Circulo extends Figura {
     private double radio, resultado;
-
-    public Circulo(double altura, double base, double radio) {
-        super(altura, base);
+    public Circulo(double radio){
         this.radio = radio;
     }
+    public Circulo(){}
 
     @Override
     public void mostrarDatos() {
@@ -15,10 +14,11 @@ public class Circulo extends Figura {
     }
 
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
         super.calcularArea();
         this.resultado = Math.PI * (Math.pow(radio, 2));
         System.out.println("El area es :\t" + resultado);
+        return this.resultado;
     }
 
     public void calcularDiametro() {

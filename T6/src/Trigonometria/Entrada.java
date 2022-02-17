@@ -2,7 +2,7 @@ package Trigonometria;
 
 public class Entrada {
     public static void main(String[] args) {
-       Circulo circulo = new Circulo(12,22,3);
+       Circulo circulo = new Circulo(22.5);
         System.out.println("--Circulo--");
        circulo.mostrarDatos();
         System.out.println("--Area--");

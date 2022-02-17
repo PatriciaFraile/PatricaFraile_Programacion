@@ -1,13 +1,15 @@
 package Trigonometria;
 
-public class Rectangulo extends Figura {
-    private double base, altura, resultado;
+public final class Rectangulo extends Figura {
+    private double  resultado;
+    private int altura, base;
 
-    public Rectangulo(double altura, double base) {
-        super(altura, base);
+    public Rectangulo(int altura, int base) {
+
         this.altura = altura;
         this.base = base;
     }
+    public Rectangulo(){}
 
     @Override
     public void mostrarDatos() {
@@ -15,10 +17,11 @@ public class Rectangulo extends Figura {
     }
 
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
         super.calcularArea();
         this.resultado = base * altura;
         System.out.println("El area es:\t" + resultado);
+        return this.resultado;
 
     }
 
@@ -29,22 +32,28 @@ public class Rectangulo extends Figura {
     }
 
     @Override
-    public double getBase() {
-        return base;
-    }
-
-    @Override
-    public void setBase(double base) {
-        this.base = base;
-    }
-
-    @Override
-    public double getAltura() {
+    public int getAltura() {
         return altura;
     }
 
     @Override
-    public void setAltura(double altura) {
+    public void setAltura(int altura) {
         this.altura = altura;
+    }
+
+    public double getResultado() {
+        return resultado;
+    }
+
+    public int getBase() {
+        return base;
+    }
+
+    public void setBase(int base) {
+        this.base = base;
+    }
+
+    public void setResultado(double resultado) {
+        this.resultado = resultado;
     }
 }

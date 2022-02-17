@@ -12,7 +12,7 @@ public class Trabajadores {
         this.din = din;
     }
 
-    public void mostrarDatos() {
+    public void mostrarDatos(String din) {
         System.out.println("Nombre" + nombre);
         System.out.println("Apellidos" + apellidos);
         System.out.println("DNI" + din);

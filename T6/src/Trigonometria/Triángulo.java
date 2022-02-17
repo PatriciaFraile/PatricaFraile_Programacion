@@ -1,13 +1,14 @@
 package Trigonometria;
 
-public class Triángulo extends Figura {
-    private double altura, base, resultado;
+public final class Triángulo extends Figura {
+    private double resultado;
+    private int altura , base;
 
-    public Triángulo(double altura, double base) {
-        super(altura, base);
+    public Triángulo(int altura, int base) {
         this.base = base;
         this.altura = altura;
     }
+    public Triángulo(){}
 
     @Override
     public void mostrarDatos() {
@@ -15,29 +16,28 @@ public class Triángulo extends Figura {
     }
 
     @Override
-    public void calcularArea() {
+    public double calcularArea() {
         super.calcularArea();
         this.resultado = (base * altura) / 2;
         System.out.println("El area es:\t" + resultado);
+        return this.resultado;
     }
 
     @Override
-    public double getAltura() {
+    public int getAltura() {
         return altura;
     }
 
     @Override
-    public void setAltura(double altura) {
+    public void setAltura(int altura) {
         this.altura = altura;
     }
 
-    @Override
-    public double getBase() {
+    public int getBase() {
         return base;
     }
 
-    @Override
-    public void setBase(double base) {
+    public void setBase(int base) {
         this.base = base;
     }
 
