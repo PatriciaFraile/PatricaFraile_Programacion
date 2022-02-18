@@ -7,7 +7,7 @@ public class Asalariados extends Trabajadores {
     private boolean contrato;
 
     public Asalariados(String nombre, String apellidos, String din, double sueldo, int numeroPagas, boolean contrato) {
-
+        super(nombre, apellidos, din);
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;
@@ -16,7 +16,8 @@ public class Asalariados extends Trabajadores {
         this.contrato = contrato;
     }
 
-    public Asalariados() {}
+    public Asalariados() {
+    }
 
     @Override
     public void mostrarDatos(String din) {
@@ -26,22 +27,30 @@ public class Asalariados extends Trabajadores {
         System.out.println("Tu contrato es:" + contrato);
     }
 
+    @Override
+    public void listar() {
+        super.listar();
+        System.out.println("Tu sueldo es:" + sueldo);
+        System.out.println("El numero de pagas es:" + numeroPagas);
+        System.out.println("Tu contrato es:" + contrato);
+    }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
 
-
+    @Override
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
+    @Override
     public String getApellidos() {
         return apellidos;
     }
 
-
+    @Override
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }

@@ -1,7 +1,14 @@
 package TrabajosHerencia;
-//incompleto
+
+import java.util.ArrayList;
+
 public class Jefes extends Trabajadores {
     private String nombre, apellidos, din, beneficios, acciones;
+    private ArrayList<Trabajadores> lista;
+
+    public Jefes() {
+        lista = new ArrayList<>();
+    }
 
     public Jefes(String nombre, String apellidos, String din, String beneficios, String acciones) {
         this.beneficios = beneficios;
@@ -10,17 +17,13 @@ public class Jefes extends Trabajadores {
         this.apellidos = apellidos;
         this.din = din;
     }
-    public Jefes(){}
+
 
     @Override
     public void mostrarDatos(String din) {
         super.mostrarDatos(din);
-        System.out.println("Acciones"+ acciones);
-        System.out.println("Beneficios"+ beneficios);
-    }
-    public void depedirTrabajador(String dni){
-
-
+        System.out.println("Acciones" + acciones);
+        System.out.println("Beneficios" + beneficios);
     }
 
 

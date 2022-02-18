@@ -1,5 +1,5 @@
 package TrabajosHerencia;
-//incompleto
+
 
 import java.util.ArrayList;
 
@@ -14,6 +14,7 @@ public class Empresa {
     public void añadirPersonal(Trabajadores trabajador) {
         if (existePersona(trabajador.getDin()) == null) {
             lista.add(trabajador);
+            System.out.println("Añadido correctamente");
         } else {
             System.out.println("Ya existe");
         }
@@ -30,7 +31,34 @@ public class Empresa {
         }
         return persona;
     }
-    public void listarPersonas(){
+
+    private void depedirTrabajador(String dni) {
+        boolean encontrado = false;
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i).getDin().equalsIgnoreCase(dni)) {
+                System.out.println("Trabajador despedido");
+                encontrado = true;
+                lista.remove(i);
+
+            }
+        }
+        System.out.println("Trabajador no encontrado");
+
+    }
+
+    public void mostrarDatos() {
+        for (Trabajadores item : lista) {
+            item.mostrarDatos(item.din);
+        }
+    }
+//incompleto
+    public void listarPersonas() {
+        for (Trabajadores item: lista) {
+            if(item instanceof Autonomos){
+                System.out.println(((Autonomos) item).listar());
+            }
+        }
+
 
     }
 

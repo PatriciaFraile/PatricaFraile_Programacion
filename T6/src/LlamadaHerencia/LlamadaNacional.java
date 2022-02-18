@@ -4,6 +4,7 @@ public class LlamadaNacional extends Llamada {
 
     private int franja, origen , destino , duracion;
 
+
     public LlamadaNacional(int origen, int destino, int duracion, int franja) {
         this.origen = origen;
         this.destino = destino;

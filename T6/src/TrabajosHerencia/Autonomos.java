@@ -1,41 +1,53 @@
 package TrabajosHerencia;
 
+
 public class Autonomos extends Trabajadores {
     private String nombre, apellidos, dni;
     private double sueldo;
     private boolean contrato;
 
-    public Autonomos(String nombre, String apellidos, String dni, double sueldo, boolean contrato) {
+    public Autonomos(String nombre, String apellidos, String din, double sueldo, boolean contrato) {
+        super(nombre, apellidos, din);
         this.nombre = nombre;
+        this.apellidos = apellidos;
         this.sueldo = sueldo;
         this.contrato = contrato;
         this.dni = dni;
     }
-    public Autonomos(){}
+
+    public Autonomos() {
+    }
 
     @Override
     public void mostrarDatos(String din) {
         super.mostrarDatos(din);
-        System.out.println("Su contrato es:" + contrato);
-        System.out.println("Su sueldo es:" + sueldo);
+        System.out.println("Contrato:" + contrato);
+        System.out.println("Sueldo:" + sueldo);
     }
 
+    @Override
+    public void listar() {
+        super.listar();
+        System.out.println("Contrato:" + contrato);
+        System.out.println("Sueldo:" + sueldo);
+    }
 
+    @Override
     public String getNombre() {
         return nombre;
     }
 
-
+    @Override
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
+    @Override
     public String getApellidos() {
         return apellidos;
     }
 
-
+    @Override
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }

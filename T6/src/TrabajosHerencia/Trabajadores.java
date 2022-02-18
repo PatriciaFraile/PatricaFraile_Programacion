@@ -1,5 +1,5 @@
 package TrabajosHerencia;
-//incompleto
+
 public class Trabajadores {
     protected String nombre, apellidos, din;
 
@@ -17,6 +17,13 @@ public class Trabajadores {
         System.out.println("Apellidos" + apellidos);
         System.out.println("DNI" + din);
     }
+    public void listar(){
+        System.out.println("Nombre" + nombre);
+        System.out.println("Apellidos" + apellidos);
+        System.out.println("DNI" + din);
+
+    }
+
 
     public String getNombre() {
         return nombre;

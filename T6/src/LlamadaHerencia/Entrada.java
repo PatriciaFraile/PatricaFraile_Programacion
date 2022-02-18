@@ -30,6 +30,8 @@ public class Entrada {
                                 lista.añadirLlamada(llamadaNacional);
                                 break;
                             case 2:
+                                //incompleto
+
 
 
                         }
