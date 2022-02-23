@@ -22,10 +22,16 @@ public class Jefes extends Trabajadores {
     @Override
     public void mostrarDatos(String din) {
         super.mostrarDatos(din);
-        System.out.println("Acciones" + acciones);
-        System.out.println("Beneficios" + beneficios);
+        System.out.println("Acciones\t" + acciones);
+        System.out.println("Beneficios\t" + beneficios);
     }
 
+    @Override
+    public void mostrarDatoss() {
+        super.mostrarDatoss();
+        System.out.println("Acciones\t" + acciones);
+        System.out.println("Beneficios\t" + beneficios);
+    }
 
     public String getNombre() {
         return nombre;

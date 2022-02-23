@@ -21,16 +21,17 @@ public class Autonomos extends Trabajadores {
     @Override
     public void mostrarDatos(String din) {
         super.mostrarDatos(din);
-        System.out.println("Contrato:" + contrato);
-        System.out.println("Sueldo:" + sueldo);
+        System.out.println("Contrato:\t" + contrato);
+        System.out.println("Sueldo:\t" + sueldo);
     }
 
     @Override
-    public void listar() {
-        super.listar();
-        System.out.println("Contrato:" + contrato);
-        System.out.println("Sueldo:" + sueldo);
+    public void mostrarDatoss() {
+        super.mostrarDatoss();
+        System.out.println("Contrato:\t" + contrato);
+        System.out.println("Sueldo:\t" + sueldo);
     }
+
 
     @Override
     public String getNombre() {

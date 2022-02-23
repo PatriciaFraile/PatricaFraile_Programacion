@@ -82,12 +82,16 @@ public class Aplicacion {
                         switch (opcion) {
                             case 1:
                                 System.out.println("Autonomos");
+                                empresa.listarAutonomos();
                                 break;
                             case 2:
                                 System.out.println("Asalariados");
+                                empresa.listarAsalariados();
                                 break;
                             case 3:
                                 System.out.println("Todos");
+                                empresa.listarTodas();
+
                                 break;
                         }
 

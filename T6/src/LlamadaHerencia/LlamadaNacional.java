@@ -2,70 +2,34 @@ package LlamadaHerencia;
 
 public class LlamadaNacional extends Llamada {
 
-    private int franja, origen , destino , duracion;
+    private int franja;
 
-
-    public LlamadaNacional(int origen, int destino, int duracion, int franja) {
-        this.origen = origen;
-        this.destino = destino;
-        this.duracion = duracion;
+    public LlamadaNacional(long nOrigen, long nDestino, int duracion, int franja) {
+        super(nOrigen, nDestino, duracion);
         this.franja = franja;
-    }
-
-
-    @Override
-    public void costeLlamadas() {
-        switch (franja) {
-            case 1:
-                this.coste = this.duracion * 0.20;
-                break;
-            case 2:
-                this.coste = this.duracion * 0.25;
-                break;
-            case 3:
-                this.coste = this.duracion * 0.30;
-        }
+        calcularCoste();
     }
 
     @Override
     public void mostrarDatos() {
         super.mostrarDatos();
-        System.out.println("Franja" + franja);
-    }
-
-    public int getFranja() {
-        return franja;
-    }
-
-    public void setFranja(int franja) {
-        this.franja = franja;
+        System.out.println("Franja: "+franja);
     }
 
     @Override
-    public int getOrigen() {
-        return origen;
-    }
-
-    @Override
-    public void setOrigen(int origen) {
-        this.origen = origen;
-    }
-
-    @Override
-    public int getDestino() {
-        return destino;
-    }
-
-    @Override
-    public void setDestino(int destino) {
-        this.destino = destino;
-    }
-
-    public int getDuracion() {
-        return duracion;
-    }
-
-    public void setDuracion(int duracion) {
-        this.duracion = duracion;
+    protected void calcularCoste() {
+        switch (franja){
+            case 1:
+                this.coste = this.duracion *0.20;
+                break;
+            case  2:
+                this.coste = this.duracion *0.25;
+                break;
+            case 3:
+                this.coste = this.duracion *0.30;
+                break;
+            default:
+                this.coste = 10000;
+        }
     }
 }

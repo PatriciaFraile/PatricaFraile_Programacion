@@ -15,10 +15,7 @@ public class Empresa {
         if (existePersona(trabajador.getDin()) == null) {
             lista.add(trabajador);
             System.out.println("Añadido correctamente");
-        } else {
-            System.out.println("Ya existe");
         }
-
     }
 
     private Trabajadores existePersona(String dni) {
@@ -51,18 +48,35 @@ public class Empresa {
             item.mostrarDatos(item.din);
         }
     }
-//incompleto
-    public void listarPersonas() {
-        for (Trabajadores item: lista) {
-            if(item instanceof Autonomos){
-                System.out.println(((Autonomos) item).listar());
-            }
+
+    public void listarTodas() {
+        for (Trabajadores item : lista) {
+            System.out.println(item.getClass().getSimpleName());
+            item.mostrarDatoss();
         }
-
-
     }
 
+    public void listarAutonomos() {
+        for (Trabajadores item : lista) {
+            if (item instanceof Autonomos) {
+                System.out.println(item.getClass().getSimpleName());
+                item.mostrarDatoss();
+            }
+        }
+    }
+
+    public void listarAsalariados() {
+        for (Trabajadores item : lista) {
+            if (item instanceof Asalariados) {
+                System.out.println(item.getClass().getSimpleName());
+                item.mostrarDatoss();
+            }
+        }
+    }
 }
+
+
+
 
 
 

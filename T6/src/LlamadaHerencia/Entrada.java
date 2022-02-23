@@ -27,12 +27,15 @@ public class Entrada {
                                 System.out.println("Escribe la franja desde el 1 hasta el 3 de la llamada");
                                 int franja = entrada.nextInt();
                                 LlamadaNacional llamadaNacional = new LlamadaNacional(origen,destino,duracion,franja);
-                                lista.añadirLlamada(llamadaNacional);
+                                lista.agregarLlamada(llamadaNacional);
                                 break;
                             case 2:
-                                //incompleto
-
-
+                                System.out.println("--Coste Llamada");
+                                lista.calcularCostes();
+                                break;
+                            case 3:
+                                System.out.println("--Mostrar Datos");
+                                lista.mostrarDatos();
 
                         }
                     }while(opcion==3);

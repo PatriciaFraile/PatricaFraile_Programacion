@@ -1,41 +1,51 @@
 package LlamadaHerencia;
 
 public abstract class Llamada {
-    protected int origen, destino, duracion;
+    protected long nOrigen, nDestino;
+    protected int duracion;
     protected double coste;
 
-    Llamada() {
-    }
+    public Llamada(){}
 
-    public Llamada(int origen, int destino, double coste, int duracion) {
-        this.origen = origen;
-        this.destino = destino;
-        this.coste = coste;
+    public Llamada(long nOrigen, long nDestino, int duracion){
+        this.nDestino = nDestino;
+        this.nOrigen = nOrigen;
         this.duracion = duracion;
+        calcularCoste();
+
     }
 
-    public void mostrarDatos() {
-        System.out.println("El numero de origen es :" + origen);
-        System.out.println("El numero de destino es :" + destino);
-        System.out.println("El coste es :" + coste);
+    protected abstract void calcularCoste();
+
+    public void mostrarDatos(){
+        System.out.println("Origen: "+nOrigen);
+        System.out.println("Destino: "+nDestino);
+        System.out.println("Duracion: "+duracion);
+        System.out.println("Coste: "+coste);
     }
 
-    public abstract void costeLlamadas();
-
-    public int getOrigen() {
-        return origen;
+    public long getnOrigen() {
+        return nOrigen;
     }
 
-    public void setOrigen(int origen) {
-        this.origen = origen;
+    public void setnOrigen(long nOrigen) {
+        this.nOrigen = nOrigen;
     }
 
-    public int getDestino() {
-        return destino;
+    public long getnDestino() {
+        return nDestino;
     }
 
-    public void setDestino(int destino) {
-        this.destino = destino;
+    public void setnDestino(long nDestino) {
+        this.nDestino = nDestino;
+    }
+
+    public int getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(int duracion) {
+        this.duracion = duracion;
     }
 
     public double getCoste() {

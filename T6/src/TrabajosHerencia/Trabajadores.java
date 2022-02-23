@@ -13,17 +13,15 @@ public class Trabajadores {
     }
 
     public void mostrarDatos(String din) {
+        System.out.println("Nombre\t" + nombre);
+        System.out.println("Apellidos\t" + apellidos);
+        System.out.println("DNI\t" + din);
+    }
+    public void mostrarDatoss() {
         System.out.println("Nombre" + nombre);
         System.out.println("Apellidos" + apellidos);
         System.out.println("DNI" + din);
     }
-    public void listar(){
-        System.out.println("Nombre" + nombre);
-        System.out.println("Apellidos" + apellidos);
-        System.out.println("DNI" + din);
-
-    }
-
 
     public String getNombre() {
         return nombre;
@@ -48,4 +46,6 @@ public class Trabajadores {
     public void setDin(String din) {
         this.din = din;
     }
+
+
 }

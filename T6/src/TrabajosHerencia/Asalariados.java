@@ -22,17 +22,17 @@ public class Asalariados extends Trabajadores {
     @Override
     public void mostrarDatos(String din) {
         super.mostrarDatos(din);
-        System.out.println("Tu sueldo es:" + sueldo);
-        System.out.println("El numero de pagas es:" + numeroPagas);
-        System.out.println("Tu contrato es:" + contrato);
+        System.out.println("Tu sueldo es:\t" + sueldo);
+        System.out.println("El numero de pagas es:\t" + numeroPagas);
+        System.out.println("Tu contrato es:\t" + contrato);
     }
 
     @Override
-    public void listar() {
-        super.listar();
-        System.out.println("Tu sueldo es:" + sueldo);
-        System.out.println("El numero de pagas es:" + numeroPagas);
-        System.out.println("Tu contrato es:" + contrato);
+    public void mostrarDatoss() {
+        super.mostrarDatoss();
+        System.out.println("Tu sueldo es:\t" + sueldo);
+        System.out.println("El numero de pagas es:\t" + numeroPagas);
+        System.out.println("Tu contrato es:\t" + contrato);
     }
 
     @Override
