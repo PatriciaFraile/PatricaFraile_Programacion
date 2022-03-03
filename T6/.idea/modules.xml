@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Herencias/Herencias.iml" filepath="$PROJECT_DIR$/Herencias/Herencias.iml" />
       <module fileurl="file://$PROJECT_DIR$/T6.iml" filepath="$PROJECT_DIR$/T6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/correcionExamen/correcionExamen.iml" filepath="$PROJECT_DIR$/correcionExamen/correcionExamen.iml" />
     </modules>
   </component>
 </project>
