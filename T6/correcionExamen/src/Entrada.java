@@ -4,6 +4,8 @@ public class Entrada {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         Seleccion listar = new Seleccion();
+        Posiciones posicionesDefensa = Posiciones.defensa;
+        Vocaciones vocacionesOfensivo = Vocaciones.ofensivo;
         int opcion;
         do{
             System.out.println("1.Añadir");
@@ -31,7 +33,7 @@ public class Entrada {
                                 System.out.println("Edad");
                                 int edad = entrada.nextInt();
                                 System.out.println("Posicion");
-                                String posicion = entrada.next();
+                                String posicion = posicionesDefensa.name();
                                 System.out.println("Sueldo");
                                 Double sueldo = entrada.nextDouble();
                                 Jugador jugador = new Jugador(nombre,apellidos,dni,edad,posicion,sueldo);
@@ -48,7 +50,7 @@ public class Entrada {
                                 System.out.println("Edad");
                                 edad = entrada.nextInt();
                                 System.out.println("Vocacion");
-                                String vocacion = entrada.next();
+                                String vocacion = vocacionesOfensivo.name();
                                 System.out.println("Sueldo");
                                 sueldo = entrada.nextDouble();
                                 Entrenador entrenador = new Entrenador(nombre , apellidos, dni,edad , vocacion ,sueldo);
