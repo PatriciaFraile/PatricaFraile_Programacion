@@ -61,7 +61,7 @@ public class Entrada {
                     System.out.println("Mostrar Jugadores delanteros");
                     System.out.println("Escribe la posicion");
                     String posicion = entrada.next();
-                    listar.verPosicion(posicion);
+                    listar.verPosicion("delantero");
 
                     break;
                 case 3:
