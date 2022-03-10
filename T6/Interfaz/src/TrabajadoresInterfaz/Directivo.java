@@ -26,7 +26,9 @@ public final class Directivo extends Persona implements Comision{
     }
 
     @Override
-    public void obtenerBeneficios() {
-
+    public void obtenerBeneficios(int beneficio) {
+        System.out.println("El beneficio es :" +beneficio*0.20);
     }
+
+
 }

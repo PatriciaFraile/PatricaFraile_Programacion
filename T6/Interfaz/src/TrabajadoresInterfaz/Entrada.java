@@ -8,5 +8,6 @@ public class Entrada {
         empresa.listarPersonas();
        // empresa.registrarVotacion(//los que están en la comision //(comision)empresa.getPersona().get(2)))
         System.out.println("Los votos de la empresa son : " +empresa.getVotos());
+        empresa.repartirBeneficios();
     }
 }

@@ -47,6 +47,13 @@ public class Empresa {
     public void registrarVotacion(Comision comision){
         this.votos += comision.votar();
     }
+    public void repartirBeneficios(){
+        for (Persona item: listar) {
+            if(item instanceof Comision){
+                ((Comision) item).obtenerBeneficios(beneficios);
+            }
+        }
+    }
 
     public String getNombre() {
         return nombre;

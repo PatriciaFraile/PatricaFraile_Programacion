@@ -22,6 +22,7 @@ public class Jefe extends Trabajador implements Comision {
         System.out.println(" Numero trabajadores "+numeroTrabajadores);
     }
 
+
     public int getNumeroTrabajadores() {
         return numeroTrabajadores;
     }
@@ -37,7 +38,8 @@ public class Jefe extends Trabajador implements Comision {
     }
 
     @Override
-    public void obtenerBeneficios() {
+    public void obtenerBeneficios(int beneficio) {
+        System.out.println("El beneficio es : " +beneficio*0.10);
 
     }
 }

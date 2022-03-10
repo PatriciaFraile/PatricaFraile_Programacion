@@ -33,7 +33,8 @@ public final class Accionista extends Persona implements Comision{
     }
 
     @Override
-    public void obtenerBeneficios() {
+    public void obtenerBeneficios(int beneficio) {
+        System.out.println("El beneficio obtenido es :" +beneficio*0.30);
 
     }
 }
