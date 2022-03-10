@@ -11,9 +11,6 @@ public final class Accionista extends Persona implements Comision{
         this.porAcciones = porAcciones;
 
     }
-    public double votar(){
-        return((int)Math.random()*11);
-    }
 
     @Override
     public void mostrarDatos() {
@@ -30,7 +27,8 @@ public final class Accionista extends Persona implements Comision{
     }
 
     @Override
-    public double votar(int voto) {
+    public double votar() {
+        double voto = (Math.random()*11)/3;
         return 0;
     }
 
