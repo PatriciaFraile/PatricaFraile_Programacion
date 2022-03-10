@@ -1,7 +1,7 @@
 package TrabajadoresInterfaz;
 
 public interface Comision {
-    int votar();
-    void repartirBeneficios();
+    double votar(int voto);
+    void obtenerBeneficios();
 
 }
