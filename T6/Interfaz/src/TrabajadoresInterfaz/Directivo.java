@@ -11,6 +11,9 @@ public final class Directivo extends Persona implements Comision{
         this.capital = capital;
 
     }
+    public double votar(){
+        return((int)Math.random()*11)/2;
+    }
 
     @Override
     public void mostrarDatos() {

@@ -10,6 +10,9 @@ public class Jefe extends Trabajador implements Comision {
         super(nombre, apellido, dni, sueldo, departamento);
         this.numeroTrabajadores = numeroTrabajadores;
     }
+    public double votar(){
+        return((int)Math.random()*11)/3;
+    }
 
     @Override
     public void calcularSueldo() {
