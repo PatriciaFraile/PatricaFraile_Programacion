@@ -1,22 +1,21 @@
 package BibliotecaInterfaz;
 
-public class Libro extends Elementos {
+public class Libro extends Elementos implements Prestar{
     private int isbn, paginas;
     private String autor, editorial;
-    private boolean estado;
 
     public Libro() {
 
     }
 
-    public Libro(String id, String seccion, String titulo, int isbn, int paginas, String autor, String editorial, boolean estado) {
-        super(id, seccion, titulo);
+    public Libro(String id, String seccion, String titulo, boolean estado, int isbn , int paginas , String autor , String editorial) {
+        super(id, seccion, titulo, estado);
         this.isbn = isbn;
-        this.paginas = paginas;
         this.autor = autor;
         this.editorial = editorial;
-        this.estado = estado;
+        this.paginas = paginas;
     }
+
 
     @Override
     public void mostrarDatos() {
@@ -66,5 +65,27 @@ public class Libro extends Elementos {
 
     public void setEstado(boolean estado) {
         this.estado = estado;
+    }
+
+    @Override
+    public void prestar() {
+        if(estado){
+            this.estado = false;
+        }
+        else{
+            System.out.println("Ya esta prestado");
+
+        }
+    }
+
+    @Override
+    public void devolver() {
+        if (!estado) {
+            this.estado = true;
+        }
+        else{
+            System.out.println("Ya esta disponible");
+        }
+
     }
 }

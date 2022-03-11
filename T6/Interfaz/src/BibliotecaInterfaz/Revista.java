@@ -1,16 +1,15 @@
 package BibliotecaInterfaz;
 
-public class Revista extends Elementos {
+public class Revista extends Elementos implements Prestar {
     private int isbn;
-    private boolean estado;
+
 
     public Revista() {
     }
 
-    public Revista(String id, String seccion, String titulo, int isbn , boolean estado) {
-        super(id, seccion, titulo);
+    public Revista(String id, String seccion, String titulo, boolean estado, int isbn) {
+        super(id, seccion, titulo, estado);
         this.isbn = isbn;
-        this.estado = estado;
     }
 
     @Override
@@ -28,11 +27,27 @@ public class Revista extends Elementos {
         this.isbn = isbn;
     }
 
-    public boolean isEstado() {
-        return estado;
+
+
+    @Override
+    public void prestar() {
+        if(estado){
+            this.estado = false;
+        }
+        else{
+            System.out.println("Ya esta prestado");
+
+        }
     }
 
-    public void setEstado(boolean estado) {
-        this.estado = estado;
+    @Override
+    public void devolver() {
+        if (!estado) {
+            this.estado = true;
+        }
+        else{
+            System.out.println("Ya esta disponible");
+        }
+
     }
 }

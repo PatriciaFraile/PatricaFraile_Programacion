@@ -29,4 +29,12 @@ public class Socio extends Persona {
     public void setNumSocio(int numSocio) {
         this.numSocio = numSocio;
     }
+
+    public ArrayList<Elementos> getPrestar() {
+        return prestar;
+    }
+
+    public void setPrestar(ArrayList<Elementos> prestar) {
+        this.prestar = prestar;
+    }
 }

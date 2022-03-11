@@ -1,16 +1,18 @@
 package BibliotecaInterfaz;
 
 public class Elementos {
-    protected String id, seccion, titulo;
+    protected String id, seccion, titulo,elemento;
+    protected boolean estado;
 
     public Elementos() {
 
     }
 
-    public Elementos(String id, String seccion, String titulo) {
+    public Elementos(String id, String seccion, String titulo, boolean estado) {
         this.id = id;
         this.seccion = seccion;
         this.titulo = titulo;
+        this.estado = estado;
     }
 
     public void mostrarDatos() {
@@ -42,4 +44,13 @@ public class Elementos {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
+    public String getElemento() {
+        return elemento;
+    }
+
+    public void setElemento(String elemento) {
+        this.elemento = elemento;
+    }
 }
+
