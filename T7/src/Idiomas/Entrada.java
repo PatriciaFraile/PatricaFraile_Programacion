@@ -40,6 +40,7 @@ public class Entrada {
 
             }
         };
+        Dialecto catalan = new Dialecto();
         idioma1.ingresarPalabra("Hola");
         idioma1.ingresarPalabra("Que");
         idioma2.ingresarPalabra("Hello");
