@@ -5,6 +5,6 @@ public class Entrada {
         ClaseGeneral claseGeneral = new ClaseGeneral("Gneral", 1 , false);
         claseGeneral.mostrarDatos();
         ClaseGeneral.ClaseAnidada claseAnidada = claseGeneral.new ClaseAnidada("Elena",2 , true);
-        claseAnidada.accesoGeneral();
+        claseGeneral.accesoHijo();
     }
 }
