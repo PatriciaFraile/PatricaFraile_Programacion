@@ -1,6 +1,6 @@
 package Explicacion.Anidacion.ejercicios;
 
-public class Coche {
+public final  class Coche {
     private double precio;
     private String modelo;
     private String marca;
