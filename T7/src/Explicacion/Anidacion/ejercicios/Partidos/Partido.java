@@ -23,10 +23,11 @@ public class Partido {
         if(golesVisitante == golesLocal){
             this.equipo.setPuntos(equipo.getPuntos()+1);
             this.equipoLocal.setPuntos(equipoLocal.getPuntos()+1);
-
         } else if(golesVisitante>golesLocal){
-            this.equipo.setPuntos(equipo.getPuntos()+1);
-            this.equipoLocal.setPuntos(equipoLocal.getPuntos()+1);
+            this.equipo.setPuntos(equipo.getPuntos()+3);
+
+        } else if(golesVisitante<golesLocal){
+            this.equipoLocal.setPuntos(equipoLocal.getPuntos()+3);
         }
     }
     public void escribirClasificacion(){
@@ -40,7 +41,9 @@ public class Partido {
         }
     }
     public void reiniciarPartido(){
-        
+        golesVisitante=0;
+        golesLocal=0;
+
     }
 
 
