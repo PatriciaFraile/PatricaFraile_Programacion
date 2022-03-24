@@ -3,7 +3,7 @@ package Explicacion.Genéricos;
 import java.util.ArrayList;
 
 
-public class Coleccion <T> implements Organizable<Boolean,String>{
+public class Coleccion <T,S, V> implements Organizable<S,V>{
      private ArrayList <T> listaCosas;
      public Coleccion(){
          listaCosas = new ArrayList<>();
@@ -12,13 +12,14 @@ public class Coleccion <T> implements Organizable<Boolean,String>{
          listaCosas.add(cosa);
      }
 
+
     @Override
-    public void organizar(Boolean criterio) {
+    public void organizar(S criterio) {
 
     }
 
     @Override
-    public String listar() {
+    public V listar() {
         return null;
     }
 }
