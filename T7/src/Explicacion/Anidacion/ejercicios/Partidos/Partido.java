@@ -1,51 +1,73 @@
 package Explicacion.Anidacion.ejercicios.Partidos;
 
 public class Partido {
+    private Equipo equipoLocal, equipoVisitante;
     private boolean jugado;
     private int golesLocal, golesVisitante;
-    private Equipo equipoLocal;
-    private Equipo equipo;
 
-
-    public void agregarLocal() {
-        golesLocal  += (int) Math.random() * 3;
+    public Partido(Equipo equipoLocal, Equipo equipoVisitante) {
+        this.equipoLocal = equipoLocal;
+        this.equipoVisitante = equipoVisitante;
     }
 
-    public void agregarGolesVisitante() {
-        golesVisitante += (int) Math.random() * 3;
+    public Partido() {
 
+    }
+
+    public void agregarGolesLocales() {
+        golesLocal += (int) Math.random() * 3;
+    }
+
+    public void agregarGolesVisitantes() {
+        golesVisitante += (int) Math.random() * 3;
     }
 
     public void mostrarResultado() {
-        System.out.printf("%s:%d - %s:%d", equipoLocal.getNombre() , getGolesLocal() , equipo.getNombre(), getGolesVisitante());
+        System.out.printf("%s:%d - %s:%d", equipoLocal.getNombre(), getGolesLocal(), equipoVisitante.getNombre(), getGolesVisitante());
     }
-    public void repartirPuntos(){
-        if(golesVisitante == golesLocal){
-            this.equipo.setPuntos(equipo.getPuntos()+1);
-            this.equipoLocal.setPuntos(equipoLocal.getPuntos()+1);
-        } else if(golesVisitante>golesLocal){
-            this.equipo.setPuntos(equipo.getPuntos()+3);
 
-        } else if(golesVisitante<golesLocal){
-            this.equipoLocal.setPuntos(equipoLocal.getPuntos()+3);
+    public void repartirGoles() {
+        if (golesLocal == golesVisitante) {
+            this.equipoLocal.setPuntos(getGolesLocal() + 1);
+            this.equipoVisitante.setPuntos(getGolesVisitante() + 1);
+
+        } else if (golesLocal > golesVisitante) {
+            this.equipoLocal.setPuntos(getGolesLocal() + 3);
+        } else if (golesVisitante > golesVisitante) {
+            this.equipoVisitante.setPuntos(getGolesVisitante() + 3);
         }
     }
-    public void escribirClasificacion(){
-        if(equipoLocal.getPuntos()>equipo.getPuntos()){
-            System.out.println("1- Atleti"+ equipoLocal.getPuntos());
-            System.out.println("2- Sevilla" + equipo.getPuntos());
-        }else {
-            System.out.println("1- Sevilla" + equipo.getPuntos());
-            System.out.println("2- Atleti"+ equipoLocal.getPuntos());
 
+    public void reiniciarPartido() {
+        golesLocal = 0;
+        golesVisitante = 0;
+    }
+
+    public void clasificacion() {
+        if (equipoLocal.getPuntos() > equipoVisitante.getPuntos()) {
+            System.out.println("1. " + equipoLocal.getNombre());
+            System.out.println("2. " + equipoVisitante.getNombre());
+        } else {
+            System.out.println("1. " + equipoVisitante.getNombre());
+            System.out.println("2. " + equipoLocal.getNombre());
         }
     }
-    public void reiniciarPartido(){
-        golesVisitante=0;
-        golesLocal=0;
 
+    public Equipo getEquipoLocal() {
+        return equipoLocal;
     }
 
+    public void setEquipoLocal(Equipo equipoLocal) {
+        this.equipoLocal = equipoLocal;
+    }
+
+    public Equipo getEquipoVisitante() {
+        return equipoVisitante;
+    }
+
+    public void setEquipoVisitante(Equipo equipoVisitante) {
+        this.equipoVisitante = equipoVisitante;
+    }
 
     public boolean isJugado() {
         return jugado;
@@ -71,32 +93,16 @@ public class Partido {
         this.golesVisitante = golesVisitante;
     }
 
-    public Equipo getEquipoLocal() {
-        return equipoLocal;
-    }
-
-    public void setEquipoLocal(Equipo equipoLocal) {
-        this.equipoLocal = equipoLocal;
-    }
-
-    public Equipo getEquipo() {
-        return equipo;
-    }
-
-    public void setEquipo(Equipo equipo) {
-        this.equipo = equipo;
-    }
-
     class Equipo {
         private int puntos;
         private String nombre;
 
         public Equipo(String nombre, String posicion) {
             this.nombre = nombre;
-            if (nombre.equalsIgnoreCase("Atleti")){
+            if(nombre.equalsIgnoreCase("Madrid")){
                 setEquipoLocal(this);
-            } else if(nombre.equalsIgnoreCase("Sevilla")){
-                setEquipo(this);
+            }else if(nombre.equalsIgnoreCase("Barcelona")){
+                setEquipoVisitante(this);
             }
         }
 
