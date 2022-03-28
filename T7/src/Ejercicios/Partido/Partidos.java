@@ -1,112 +1,102 @@
 package Ejercicios.Partido;
 
 public class Partidos {
-    private Equipo local, visitante;
-    private boolean jugado;
+    private Equipo equipoLocal, equipoVisitante;
     private int golesLocal, golesVisitante;
+    private boolean jugado;
 
-    public void agregarGolesLocal() {
-        golesLocal += (int) Math.random() * 3;
-    }
-
-    public void agregarGolesVisitantes() {
-        golesVisitante += (int) Math.random() * 3;
-    }
-    public void mostrarInformacion(){
-        System.out.println(local + "VS" + visitante);
-    }
-
-    public void mostrarResultados() {
-        System.out.printf("%d:%s - %d:%s", local.getNombre(), getGolesLocal(), visitante.getNombre(), getVisitante());
-    }
-    public void reiniciarPartido(){
-        golesLocal = 0;
-        golesVisitante = 0;
-    }
-    public void repartirPuntos(){
-        if(golesLocal>golesVisitante){
-            local.setPuntos(local.getPuntos()+3);
-        }else if(golesLocal==golesVisitante){
-            local.setPuntos(local.getPuntos()+1);
-            visitante.setPuntos(visitante.getPuntos()+1);
-        } else if (golesVisitante>golesLocal){
-            visitante.setPuntos(visitante.getPuntos()+3);
-        }
-    }
     public void jugarPartido(){
-        golesLocal = 0 ;
-        golesVisitante = 0;
+
+        golesLocal = 0;
+        golesVisitante =0;
         for (int i = 0; i < 2; i++) {
+
             for (int j = 0; j < 3; j++) {
-                if(local.atacar()>visitante.defender()){
+
+                if (equipoLocal.atacar()>equipoVisitante.defender()){
                     golesLocal++;
                 }
-                else{
+
+                if (equipoVisitante.atacar()>equipoLocal.defender()) {
                     golesVisitante++;
                 }
             }
+            System.out.println("Fin parte");
+        }
+        System.out.println("Fin partido");
+
+    }
+
+    public void calcularPuntos(){
+        if (golesLocal > golesVisitante){
+            equipoLocal.setPuntos(equipoLocal.getPuntos()+3);
+        } else if(golesVisitante > golesLocal) {
+            equipoVisitante.setPuntos(equipoVisitante.getPuntos()+3);
+        } else {
+            equipoLocal.setPuntos(equipoLocal.getPuntos()+1);
+            equipoVisitante.setPuntos(equipoVisitante.getPuntos()+1);
 
         }
     }
-
-    public Equipo getLocal() {
-        return local;
+    public void reiniciarPartido(){
+        golesVisitante = 0;
+        golesLocal = 0;
     }
 
-    public void setLocal(Equipo local) {
-        this.local = local;
+    public void mostrarResultado(){
+        System.out.printf("%s %d - %s %d%n",equipoLocal.getNombre(), golesLocal, equipoVisitante.getNombre(),golesVisitante);
     }
 
-    public Equipo getVisitante() {
-        return visitante;
+    public void mostrarEquipos(){
+        System.out.println(equipoLocal.getNombre() +" VS "+equipoVisitante.getNombre());
     }
 
-    public void setVisitante(Equipo visitante) {
-        this.visitante = visitante;
+    public Equipo getEquipoLocal() {
+        return equipoLocal;
     }
 
-    public boolean isJugado() {
-        return jugado;
+    public void setEquipoLocal(Equipo equipoLocal) {
+        this.equipoLocal = equipoLocal;
     }
 
-    public void setJugado(boolean jugado) {
-        this.jugado = jugado;
+    public Equipo getEquipoVisitante() {
+        return equipoVisitante;
     }
 
-    public int getGolesLocal() {
-        return golesLocal;
+    public void setEquipoVisitante(Equipo equipoVisitante) {
+        this.equipoVisitante = equipoVisitante;
     }
 
-    public void setGolesLocal(int golesLocal) {
-        this.golesLocal = golesLocal;
-    }
+    class Equipo{
 
-    public int getGolesVisitante() {
-        return golesVisitante;
-    }
+        private String nombre;
+        private int puntos;
 
-    public void setGolesVisitante(int golesVisitante) {
-        this.golesVisitante = golesVisitante;
-    }
-
-    class Equipo {
-        String nombre;
-        int puntos;
 
         public Equipo(String nombre, String posicion) {
             this.nombre = nombre;
-            if (posicion.toLowerCase().equals("local")) {
-                setLocal(this);
-            }
-             else if (posicion.toLowerCase().equals("visitante")) {
-                setVisitante(this);
+            if (posicion.toLowerCase().equals("local")){
+                setEquipoLocal(this);
+            } else if(posicion.toLowerCase().equals("visitante")){
+                setEquipoVisitante(this);
             }
         }
-        public int atacar(){
-            return (int)Math.random()*100;
+
+        public int atacar (){
+            return (int) (Math.random()*100);
         }
+
         public int defender(){
-            return (int)Math.random()*100;
+            return (int) (Math.random()*100);
+        }
+
+
+        public void modificarJugado(){
+            jugado = true;
+        }
+
+        public void mostrarInformacion(){
+            System.out.println("Nombre: "+nombre+" Puntos: "+puntos);
         }
 
         public String getNombre() {
