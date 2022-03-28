@@ -1,4 +1,7 @@
-package Idiomas;
+package Ejercicios.Idiomas;
+
+import Ejercicios.Idiomas.Dialecto;
+import Ejercicios.Idiomas.Idioma;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package Idiomas;
+package Ejercicios.Idiomas;
 
 import java.util.ArrayList;
 

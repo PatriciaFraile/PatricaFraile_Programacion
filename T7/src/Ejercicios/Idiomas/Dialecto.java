@@ -1,6 +1,6 @@
-package Idiomas;
+package Ejercicios.Idiomas;
 
-public final class Dialecto extends Idioma implements Cuantificable{
+public final class Dialecto extends Idioma implements Cuantificable {
  private Idioma idioma;
  private  int numeroHablantes;
 
