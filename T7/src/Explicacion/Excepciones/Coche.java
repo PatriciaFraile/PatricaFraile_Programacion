@@ -14,7 +14,11 @@ public class Coche {
         if(acierto){
             System.out.println("Pasado en un true");
         }else{
-            throw  new NullPointerException();
+            try {
+                throw new MiExcepcion("Error locaclizado");
+            } catch (MiExcepcion e) {
+                e.printStackTrace();
+            }
         }
 
     }
