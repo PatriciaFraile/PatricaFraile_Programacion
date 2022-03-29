@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b060a7-0536-4748-91e8-1a7dd007db4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Ejercicios/Partido/Entrada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ejercicios/Partido/Partidos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Explicacion/Anidacion/ejercicios/Partidos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Explicacion/Anidacion/ejercicios/Partidos/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Idiomas/Cuantificable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicios/Idiomas/Cuantificable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Idiomas/Dialecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicios/Idiomas/Dialecto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Idiomas/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicios/Idiomas/Entrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Idiomas/Idioma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicios/Idiomas/Idioma.java" afterDir="false" />
-    </list>
+    <list default="true" id="507ac14b-416a-4aba-a05c-8b9dd96869d2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="271Rag4mG7ptEo6hoHmqeFy3pwS" />
+  <component name="ProjectId" id="2745h37a2Po7Q3LPReVKwIjn4he" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,28 +15,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Ejercicios/Partido" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2b060a7-0536-4748-91e8-1a7dd007db4e" name="Changes" comment="" />
-      <created>1648485671506</created>
+      <changelist id="507ac14b-416a-4aba-a05c-8b9dd96869d2" name="Changes" comment="" />
+      <created>1648566634270</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648485671506</updated>
+      <updated>1648566634270</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
