@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="507ac14b-416a-4aba-a05c-8b9dd96869d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Explicacion/ClaseA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Explicacion/ClaseB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Explicacion/ClaseC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Explicacion/Entrada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Explicacion/Modificables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Anidacion/ClaseGeneral.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Anidacion/Entrada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Excepciones/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Excepciones/Entrada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Excepciones/MiExcepcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Camiseta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Coleccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/ColeccionCamisetas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/ColeccionEspecifica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Coleccionable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Disco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Entrada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Organizable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Genericos/Partido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coches/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/coches/Entrada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +47,34 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Excepciones" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pfrao\OneDrive\Escritorio\PatriciaFraile_Programacion\T7\src\Excepciones" />
+      <recent name="C:\Users\pfrao\OneDrive\Escritorio\PatriciaFraile_Programacion\T7\src\Anidacion" />
+      <recent name="C:\Users\pfrao\OneDrive\Escritorio\PatriciaFraile_Programacion\T7\src\Genericos" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Entrada" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Genericos.Entrada" />
+      <module name="T7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Genericos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Entrada" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
