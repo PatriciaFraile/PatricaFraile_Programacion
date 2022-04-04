@@ -12,10 +12,10 @@ public final class Dialecto extends Idiomas {
         this.numeroHablates = numeroHablates;
     }
 
-    public Dialecto(Idiomas idioma, int numeroHablates) {
+    /*public Dialecto(Idiomas idioma, int numeroHablates) {
         this.idioma = idioma;
         this.numeroHablates = numeroHablates;
-    }
+    }*/
 
     @Override
     public void saludar() {

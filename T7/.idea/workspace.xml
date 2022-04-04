@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="507ac14b-416a-4aba-a05c-8b9dd96869d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/idioma/Cuantificable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/idioma/Dialecto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/idioma/Entrada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/idioma/Idiomas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repaso2/Cuenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repaso2/Entrada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T7/idioma/Entrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T7/idioma/Entrada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/idioma/Dialecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/idioma/Dialecto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/idioma/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/idioma/Entrada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <recent name="C:\Users\pfrao\OneDrive\Escritorio\PatriciaFraile_Programacion\T7\src\Genericos" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Entrada (4)">
+  <component name="RunManager" selected="Application.Entrada (5)">
     <configuration name="Entrada (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="partido.Entrada" />
       <module name="T7" />
@@ -105,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Entrada" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Genericos.Entrada" />
+    <configuration name="Entrada (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="repaso2.Entrada" />
       <module name="T7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Genericos.*" />
+          <option name="PATTERN" value="repaso2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Entrada (5)" />
         <item itemvalue="Application.Entrada (4)" />
         <item itemvalue="Application.Entrada (3)" />
         <item itemvalue="Application.Entrada (2)" />
         <item itemvalue="Application.Entrada (1)" />
-        <item itemvalue="Application.Entrada" />
       </list>
     </recent_temporary>
   </component>

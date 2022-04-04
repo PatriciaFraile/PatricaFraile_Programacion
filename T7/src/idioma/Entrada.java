@@ -40,14 +40,14 @@ public class Entrada {
             item.saludar();
             item.despedir();
         }
-        Dialecto ingles1 = new Dialecto(español ,1200);
+        /*Dialecto ingles1 = new Dialecto(español ,1200);
         ingles1.saludar();
         ingles1.calcularNumeroHablantes(30, new Cuantificable() {
             @Override
             public void cuantificarHablantes(int n) {
                 ingles1.setNumeroHablates(ingles.getNumeroHablantes()*n);
             }
-        });
+        });*/
 
         for ( Idiomas idioma : listaIdiomas ) {
             idioma.listarPalabras();
