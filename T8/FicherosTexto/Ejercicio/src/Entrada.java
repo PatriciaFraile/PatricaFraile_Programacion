@@ -51,6 +51,7 @@ public class Entrada {
                     ficherosController.getDirectoryF1(directory4);
                     break;
                 case 4:
+                    System.out.println("--Fichero.txt--");
                     System.out.println("No se puede listar, no es un directorio");
             }
 
