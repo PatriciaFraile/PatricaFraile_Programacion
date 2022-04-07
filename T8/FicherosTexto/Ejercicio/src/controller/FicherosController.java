@@ -1,23 +1,52 @@
 package controller;
-
 import java.io.File;
+import java.util.Scanner;
 
 public class FicherosController {
-    public void getDirectoryInfo(File directory){
-        //listar ficheros
-        int posicion = 1;
-        File[] nombreFicheros = directory.listFiles();
-        for (File nombre: nombreFicheros) {
-            System.out.println(posicion+" -"+nombre.getName());
-            posicion++;
+    Scanner scanner = new Scanner(System.in);
+
+    public void listParentDirectory(){
+        File file = new File("C:\\Users\\Usuario DAM1\\Desktop\\Fichero");
+        File[] ficherosParent = file.listFiles();
+        System.out.println("Imprimiendo "+file.getName());
+        int contador=0;
+        int opcion=0;
+        for ( File item: ficherosParent ) {
+            System.out.println(contador + " - "+item.getName());
+            contador++;
+            //}
+        }
+        System.out.println("Que directorio quieres listar");
+        opcion = scanner.nextInt();
+        if (opcion>=0 && opcion<ficherosParent.length){
+            if (ficherosParent[opcion].isDirectory()){
+                listarChild(ficherosParent[opcion]);
+            } else {
+                System.out.println("Error. es un fichero");
+            }
+        } else {
+            System.out.println("Opción incorrecta");
         }
     }
-    public void getDirectoryF1(File directory){
-        File[] nombreFicheros = directory.listFiles();
-        int posicion = 1;
-        for (File item: nombreFicheros) {
-            System.out.println(posicion+"."+item.getName());
-            posicion++;
+
+    public void listarChild(File child){
+        int contador=0;
+        int opcion=0;
+        File[] ficherosChild = child.listFiles();
+        for ( File childItem : ficherosChild ) {
+            System.out.println(contador +" - " + childItem.getName());
+            contador++;
+        }
+        System.out.println("Que opcion quieres");
+        opcion = scanner.nextInt();
+        if (opcion>=0 && opcion<ficherosChild.length){
+            if (ficherosChild[opcion].isDirectory()){
+                listarChild(ficherosChild[opcion]);
+            } else {
+                System.out.println("Error. es un fichero");
+            }
+        } else {
+            System.out.println("Opción incorrecta");
         }
     }
 }

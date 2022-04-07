@@ -1,22 +1,24 @@
 package controller;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class FicherosController {
-    public void getFileInfo(File file){
+    public void getFileInfo(File file) {
 
         System.out.println(file.isFile());
         System.out.println(file.isDirectory());
         System.out.println(file.exists());
-        System.out.println("Padre"+file.getParent());
-        System.out.println("Nombre"+file.getName());
-        System.out.println("Ruta absoluta "+file.getAbsolutePath());
-        System.out.println("Ruta Relativa "+file.getPath());
+        System.out.println("Padre" + file.getParent());
+        System.out.println("Nombre" + file.getName());
+        System.out.println("Ruta absoluta " + file.getAbsolutePath());
+        System.out.println("Ruta Relativa " + file.getPath());
 
 
         //crear un nuevo fichero
-        if(!file.exists()){
+        if (!file.exists()) {
             try {
                 file.createNewFile();
             } catch (IOException e) {
@@ -24,8 +26,9 @@ public class FicherosController {
             }
         }
     }
-    public void getDirectoryInfo(File file){
-        if(file.isDirectory()){
+
+    public void getDirectoryInfo(File file) {
+        if (file.isDirectory()) {
             String[] nombreFicheros = file.list();
             //System.out.println(nombreFicheros);
             //Nombre de los ficheros
@@ -38,5 +41,23 @@ public class FicherosController {
                 System.out.println(ficheros);
             }*/
         }
+    }
+
+    public void lecturaFichero(File file) {
+        FileReader fileReader = null;
+
+        try {
+            fileReader = new FileReader(file);
+            fileReader.read();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fileReader.close();
+            } catch (IOException | NullPointerException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 }
