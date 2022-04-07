@@ -1,5 +1,5 @@
 package controller;
-import java.io.File;
+import java.io.*;
 import java.util.Scanner;
 
 public class FicherosController {
@@ -49,4 +49,23 @@ public class FicherosController {
             System.out.println("Opción incorrecta");
         }
     }
+    public void lecturaFichero(File file){
+        FileReader fileReader = null;
+            try {
+                fileReader = new FileReader(file);
+                int lectura=0;
+                while((lectura=fileReader.read())!=-1){
+                    System.out.println((char)lectura);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    fileReader.close();
+                } catch (IOException | NullPointerException e) {
+                    e.printStackTrace();
+                }
+            }
+    }
+
 }
