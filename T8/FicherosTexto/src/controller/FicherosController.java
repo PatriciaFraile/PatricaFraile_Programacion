@@ -107,7 +107,7 @@ public class FicherosController {
             }
         }
     }
-    /*public void cifrar(){
+      public void cifrar(){
         String lineaEscribir = "Esto es un ejemplo de una linea a escribir dentro del fichero";
         List<Integer> listar = lineaEscribir.chars().boxed().collect(Collectors.toList());
         for (int item: listar) {
@@ -116,5 +116,5 @@ public class FicherosController {
 
 
 
-    }*/
+    }
 }

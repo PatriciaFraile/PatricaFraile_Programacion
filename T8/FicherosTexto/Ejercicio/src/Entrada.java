@@ -7,5 +7,6 @@ public class Entrada {
         File file = null;
         FicherosController ejericicioController = new FicherosController();
          //ejericicioController.listParentDirectory();
+        ejericicioController.cifrarLinea();
     }
 }
