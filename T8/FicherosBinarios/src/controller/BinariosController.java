@@ -40,11 +40,13 @@ public class BinariosController {
 
         // CERRARLO!!!!
         ObjectInputStream ois = null;
+        Usuario usuario = null;
 
         try {
             ois = new ObjectInputStream(new FileInputStream(file));
-            Usuario usuario = (Usuario) ois.readObject();
-            System.out.println(usuario.toString());
+            while((usuario =(Usuario) ois.readObject())!=null){
+                System.out.println(usuario.toString());
+            }
             /*
              * Usuario{nombre='Borja', apellido='Martin', password='1345A'}
              * Usuario{nombre='Pedro', apellido='Herrera', password='1345A'}
@@ -63,6 +65,7 @@ public class BinariosController {
             }
         }
     }
+
 
 
 
