@@ -1,0 +1,33 @@
+{
+  "nombre": "Borja",
+  "apellidos": "Martin",
+  "edad": 34,
+  "hobbies": [
+    "musica",
+    "deporte",
+    "cine",
+    "informática"
+  ],
+  "conocimientos": [
+    {
+      "concepto": "programación",
+      "experiencia ": 12,
+      "detalles": [
+        "java",
+        "html",
+        "javascript"
+      ]
+    },
+    {
+      "concepto": "programación",
+      "experiencia ": 20,
+      "detalles": [
+        "java",
+        "html",
+        "javascript",
+        "python",
+        "css"
+      ]
+    }
+  ]
+}
