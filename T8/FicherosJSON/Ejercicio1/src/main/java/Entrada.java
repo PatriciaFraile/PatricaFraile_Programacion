@@ -9,6 +9,7 @@ public class Entrada {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Genero");
         String genero = entrada.nextLine();
+        controller.lecturaUsuarios();
 
 
 

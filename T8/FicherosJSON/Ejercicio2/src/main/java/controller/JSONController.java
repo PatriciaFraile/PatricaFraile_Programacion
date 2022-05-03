@@ -27,16 +27,15 @@ public class JSONController {
                     stringBuffer.append(linea);
                 }
                 String response = stringBuffer.toString();
-                String response = stringBuffer.toString();
                 JSONObject responseJSON = new JSONObject(response);
-                JSONArray arrayResultados = responseJSON.getJSONArray("results");
-
+                //JSONArray arrayResultados = responseJSON.getJSONArray("results");
                 for (int i = 0; i < arrayResultados.length(); i++) {
                     JSONObject objetoResultado = arrayResultados.getJSONObject(i);
                     //System.out.println(objetoResultado);
-                    String mail = objetoResultado.getString("email");
+                    //String mail = objetoResultado.getString("email");
                     System.out.println(mail);
                 }
+
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
