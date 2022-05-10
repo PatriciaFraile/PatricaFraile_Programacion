@@ -1,38 +1,33 @@
+import controller.Alumno;
+import controller.ControllerBD;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
+        String opcion = null;
+        Scanner entradaTeclado = new Scanner(System.in);
 
-        String host = "127.0.0.1:80";
-        String dtbs = "colegio_2";
-        String user = "root";
-        String pass = "admin";
-        /*Connection conn=null;
-        Statement st = conn.createStatement();
-        ResultSet rs;*/
-
-        PreparedStatement ps;
-
-
-
-        String newConnectionURL = "jdbc:mysql://" + host + "/" + dtbs
-                + "?" + "user=" + user + "&password=" + pass;
-        /*
-        try {
-            // Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = (Connection) DriverManager.getConnection(newConnectionURL);
-            System.out.println(conn.getCatalog());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }  finally {
-            try {
-                if (conn != null) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }*/
+        ControllerBD controllerBD = new ControllerBD();
+        //controllerBD.insertarAlumnosStatement();
+       /* do{
+        System.out.println("Introduce un nombre");
+        String nombre = entradaTeclado.next();
+        System.out.println("Introduce un apellido");
+        String apellido =  entradaTeclado.next();
+        System.out.println("Introduce una edad");
+        int edad = entradaTeclado.nextInt();
+        Alumno alumno = new Alumno(nombre,apellido,edad);
+        controllerBD.introducirAlumnos(alumno);
+        System.out.println("Quieres continuar insertando (S/N)");
+        opcion = entradaTeclado.next();
+        }while (opcion.equalsIgnoreCase("s"));
+        */
+       // controllerBD.insertarAlumnosPrepare();
 
 
     }
