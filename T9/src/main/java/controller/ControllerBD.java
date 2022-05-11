@@ -122,18 +122,50 @@ public class ControllerBD<UPDATE, SET> implements SchemeDB {
             }
         }
     }
-    public  void actualizarUsuario(){
-        System.out.println("Introduce el nombre del usuario");
-        String nombre1 =  entradaTeclado.next();
-        System.out.println("Introduce la edad");
-        int edad1 = entradaTeclado.nextInt();
-        UPDATE alumnos ;
-        SET edad = 1
-                        WHERE nombre = nombre1;
+    public  void actualizarUsuario(String nombre ,int edad) {
+        String query = "UPDATE %s SET %s = ? WHERE %s = ?";
+        getConection();
+        try {
+            preparedStatement = conn.prepareStatement(String.format(query, SchemeDB.TAB_ALUMNOS,
+                    SchemeDB.COL_EDAD, SchemeDB.COL_NAME, nombre));
+            preparedStatement.setInt(1, edad);
+            preparedStatement.setString(2, nombre);
+            int rows = preparedStatement.executeUpdate();
+            System.out.println("Los cambios afectados son" + rows);
 
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+       /* public void borrar(){
+            String quer = "DELETE FROM %s WHERE %s < ?";
+            getConection();
+            try {
+                preparedStatement = conn.prepareStatement(String.format(query, SchemeDB.TAB_ALUMNOS,
+                        SchemeDB.COL_EDAD));
+                preparedStatement.setInt(1, edad);
+                int rows = preparedStatement.executeUpdate();
+                System.out.println("Los cambios afectados son" + rows);
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                try {
+                    preparedStatement.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+
+
+        }*/
 
     }
-
 
 
 }

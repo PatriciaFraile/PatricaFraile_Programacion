@@ -28,6 +28,10 @@ public class main {
         }while (opcion.equalsIgnoreCase("s"));
         */
        // controllerBD.insertarAlumnosPrepare();
+        System.out.println("Introduce el nombre del usuario");
+        String nombre =  entradaTeclado.next();
+        System.out.println("Introduce la edad");
+        int edad = entradaTeclado.nextInt();
 
 
     }
