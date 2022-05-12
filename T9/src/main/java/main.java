@@ -1,10 +1,5 @@
-import controller.Alumno;
 import controller.ControllerBD;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class main {
@@ -28,10 +23,11 @@ public class main {
         }while (opcion.equalsIgnoreCase("s"));
         */
        // controllerBD.insertarAlumnosPrepare();
-        System.out.println("Introduce el nombre del usuario");
+        /*System.out.println("Introduce el nombre del usuario");
         String nombre =  entradaTeclado.next();
         System.out.println("Introduce la edad");
-        int edad = entradaTeclado.nextInt();
+        int edad = entradaTeclado.nextInt();*/
+        controllerBD.getResultados();
 
 
     }
